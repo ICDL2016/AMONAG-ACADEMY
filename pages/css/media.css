@@ -51,7 +51,7 @@
 @media only screen and (max-width : 640px) {
 	.search__block {
 		position: relative;
-		margin: 0 182px 0 31px;
+		margin: 0 182px 0 34px;
 	}
 	.search__block input[type="text"] {
 		position: absolute;
