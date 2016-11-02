@@ -144,6 +144,7 @@ img {
 	padding: 0 7px;
 	float: left;
 	transition: 0.3s;
+	width: 26px;
 }
 .header .logo__block:hover {
 	background: #fa4716;
