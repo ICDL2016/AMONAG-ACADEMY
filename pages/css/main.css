@@ -126,7 +126,7 @@ img {
 	padding: 0 10px;
 }
 .header {
-	background-color: #df522b;
+	background-color: rgba(223,82,43,0.9);
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -214,7 +214,6 @@ img {
 	font-size: 20px;
 	cursor: pointer;
 	float: left;
-	background: #df522b;
 	padding: 5px 0 0 0;
 	width: 5%;
 	line-height: 1;
@@ -229,6 +228,8 @@ img {
 }
 .item-masonry img {
 	width: 100%;
+	opacity: 0.9;
+	transition: 0.3s;
 }
 .item-masonry a {
 	display: block;
