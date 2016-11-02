@@ -62,6 +62,22 @@ $(document).ready(function () {
 			columnWidth: sizer
 		});
 	});
+
+
+	$(".burger").click(function(){
+		$(".sidebar__nav").slideToggle();
+	});
+
+	$(".language").click(function(){
+		$(".lang__list").slideToggle();
+	});
+
+
+
+
+
+
+
 	
 });
 

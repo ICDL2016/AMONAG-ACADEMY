@@ -1,8 +1,11 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1275px) {
+	.sidebar__nav {
+		float: right;
+		width: 359px;
+	}
 }
 
 /* Medium Devices, Desktops */
