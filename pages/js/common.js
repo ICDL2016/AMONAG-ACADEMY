@@ -72,9 +72,9 @@ $(document).ready(function () {
 		$(".lang__list").slideToggle();
 	});
 
-
-
-
+	$( ".mobile__search_btn" ).click(function() {
+		$( ".search__block input[type='text']" ).fadeIn( 300, "linear" );
+	});
 
 
 
