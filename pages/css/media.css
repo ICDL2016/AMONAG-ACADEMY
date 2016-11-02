@@ -41,7 +41,9 @@
 		animation: none !important;
 	}
 
-
+	.search__block {
+		margin: 0 170px 0 213px;
+	}
 
 
 }
@@ -49,7 +51,7 @@
 @media only screen and (max-width : 640px) {
 	.search__block {
 		position: relative;
-		margin: 0 182px 0 45px;
+		margin: 0 182px 0 31px;
 	}
 	.search__block input[type="text"] {
 		position: absolute;
@@ -58,6 +60,7 @@
 		background: #fff;
 		display: none;
 		font-size: 14px;
+		margin-top: 3px;
 	}
 	.desktop__search_btn {
 		display: none;
