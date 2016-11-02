@@ -129,7 +129,6 @@ img {
 	width: 100%;
 	top: 0;
 	z-index: 999;
-	border-bottom: 3px solid #808080;
 }
 .header .logo__block img {
 	width: 26px;
@@ -337,7 +336,7 @@ img {
 	position: absolute;
 	top: 43px;
 	right: 0;
-	width: 180px;
+	width: 340px;
 	display: none;
 }
 .nav__btn li .lang__list {
@@ -362,4 +361,28 @@ img {
 }
 .mobile__search_btn {
 	display: none;
+}
+.jQtooltip {
+	position: relative;
+}
+.jQtooltip div {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0px;
+	z-index: 1000;
+	padding: 5px 8px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 16px;
+	color: #fff;
+	box-shadow: 0 1px 3px #e48368;
+	background: #ff673d;
+	border-radius: 2px;
+	text-transform: capitalize;
+	white-space: nowrap;
+}
+.logo__block div {
+	left: 0;
+	width: 120px;
 }
