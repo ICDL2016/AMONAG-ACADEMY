@@ -338,14 +338,13 @@ img {
 }
 .sidebar__nav a {
 	display: block;
+	border-left: 3px solid #808080;
+	border-bottom: 3px solid #808080;
 	text-decoration: none;
 	transition: 0.3s;
 }
 .sidebar__nav a:hover {
 	background: #f34819;
-}
-.sidebar__nav li {
-	margin-bottom: 3px;
 }
 .nav__btn li .sidebar__nav {
 	position: absolute;
