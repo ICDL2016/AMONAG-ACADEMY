@@ -126,14 +126,14 @@ $(document).ready(function () {
 
 
 $(function(){
-	$(window).resize(function() {
-		var heightPl = $(window).height();
 
-		if( heightPl < 540 ) {
+		var heightPl = document.documentElement.clientHeight;
+
+		if( heightPl < 740 ) {
 			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight" );
 		}
 
-	});
+
 })
 
 
