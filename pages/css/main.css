@@ -343,12 +343,15 @@ img {
 	text-decoration: none;
 	transition: 0.3s;
 }
+.sidebar__nav li:first-child a {
+	border-top: 3px solid #808080;
+}
 .sidebar__nav a:hover {
 	background: #f34819;
 }
 .nav__btn li .sidebar__nav {
 	position: absolute;
-	top: 43px;
+	top: 40px;
 	right: 0;
 	width: 340px;
 	display: none;
