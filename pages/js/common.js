@@ -125,7 +125,16 @@ $(document).ready(function () {
 })(jQuery)
 
 
+$(function(){
+	$(window).resize(function() {
+		var heightPl = $(window).height();
 
+		if( heightPl < 540 ) {
+			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight" );
+		}
+
+	});
+})
 
 
 

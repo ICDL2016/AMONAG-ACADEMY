@@ -40,28 +40,14 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-
-	.search__block {
-		margin: 0 170px 0 213px;
+	.jQtooltip div {
+		display: none !important;
 	}
 
 
 }
 
 @media only screen and (max-width : 640px) {
-	.search__block {
-		position: relative;
-		margin: 0 182px 0 34px;
-	}
-	.search__block input[type="text"] {
-		position: absolute;
-		left: 10px;
-		top: 5px;
-		background: #fff;
-		display: none;
-		font-size: 14px;
-		margin-top: 3px;
-	}
 	.desktop__search_btn {
 		display: none;
 	}
@@ -69,16 +55,33 @@
 		display: block;
 	}
 }
+@media only screen and (max-width : 580px) {
+	.header .site__title {
+		position: absolute;
+		top: 8px;
+		left: 0;
+	}
+	.search__block input[type="text"] {
+		background: #fff;
+		display: none;
+	}
+	.input__pole {
+		margin: 0 38px 0 8px;
+		position: relative;
+		z-index: 9;
+	}
 
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.site__title {
+	.site__title span {
 		display: none;
 	}
 	.nav__btn li .sidebar__nav {
 		width: 180px;
 	}
+
 }
 
 /* Custom, iPhone Retina */
