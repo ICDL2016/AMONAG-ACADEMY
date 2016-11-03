@@ -379,6 +379,7 @@ img {
 .jQtooltip {
 	position: relative;
 }
+
 .jQtooltip div {
 	display: none;
 	position: absolute;
