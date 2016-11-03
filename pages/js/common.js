@@ -129,7 +129,7 @@ $(function(){
 
 		var heightPl = document.documentElement.clientHeight;
 
-		if( heightPl < 740 ) {
+		if( heightPl < 640 ) {
 			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight" );
 		}
 
