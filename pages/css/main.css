@@ -249,6 +249,9 @@ img {
 .sizer {
 	width: 180px;
 }
+.sizer__post {
+	width: 300px;
+}
 .item-masonry img {
 	width: 100%;
 	opacity: 0.9;

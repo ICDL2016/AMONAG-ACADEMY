@@ -63,6 +63,17 @@ $(document).ready(function () {
 		});
 	});
 
+	var sizer__post = '.sizer__post';
+
+	var container = $('.wrap__item');
+
+	container.imagesLoaded(function () {
+		container.masonry({
+			itemSelector: '.item-masonry',
+			columnWidth: sizer__post
+		});
+	});
+
 
 	$(".burger").click(function(){
 		$(".sidebar__nav").slideToggle();
