@@ -330,12 +330,15 @@ img {
 }
 .sidebar__nav {
 	position: fixed;
-	top: 40px;
+	top: 0;
 	right: 0;
 	z-index: 99;
-	height: 92.9%;
+	height: 100%;
 	overflow: auto;
 	display: none;
+}
+.sidebar__nav ul {
+	padding-top: 40px;
 }
 .sidebar__nav a {
 	text-align: left;
