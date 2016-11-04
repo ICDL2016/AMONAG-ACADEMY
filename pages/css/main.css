@@ -139,7 +139,7 @@ img {
 	padding: 10px 0 6px;
 }
 .header .logo__block {
-	border-right: 3px solid #808080;
+	border-right: 2px solid #808080;
 	padding: 0 7px;
 	float: left;
 	transition: 0.3s;
@@ -162,7 +162,7 @@ img {
 }
 .nav__btn>li {
 	float: left;
-	border-left: 3px solid #808080;
+	border-left: 2px solid #808080;
 	height: 40px;
 	width: 40px;
 	position: relative;
@@ -244,7 +244,7 @@ img {
 	right: 0;
 }
 .content {
-	margin: 43px 0 0 0;
+	margin: 42px 0 0 0;
 }
 .sizer {
 	width: 180px;
@@ -257,8 +257,8 @@ img {
 .item-masonry a {
 	display: block;
 	background: #f3f3f3;
-	border-left: 3px solid #808080;
-	border-bottom: 3px solid #808080;
+	border-left: 2px solid #808080;
+	border-bottom: 2px solid #808080;
 	text-align: center;
 	text-decoration: none;
 	transition: 0.3s;
@@ -427,9 +427,13 @@ img {
 	width: 100%;
 }
 .subscription__content {
-	background: #ff5526;
+	background: rgba(223,82,43,1);
 	padding: 5px;
 	text-align: center;
+	transition: 0.3s;
+}
+.subscription__unit:hover .subscription__content {
+	background: #fa4716;
 }
 .subscription__content input[type="text"] {
 	width: 100%;
@@ -451,8 +455,8 @@ img {
 	display: block;
 	color: #fff;
 	background: #808080;
-	padding: 5px;
-	font-size: 14px;
+	padding: 4px 0 3px;
+	font-size: 13px;
 	margin: 8px 0;
 }
 .subscription__content .lang__span {
@@ -499,13 +503,22 @@ img {
 	background: #fff;
 	padding: 10px 10px 10px 190px;
 }
+.amonag__content {
+	background: #fff;
+	padding: 10px;
+}
+.inside__content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 p {
 	color: #666666;
 	line-height: 1.2;
 	font-size: 15px;
 	margin-bottom: 15px;
 }
-.restaurant__content h3 {
+.restaurant__content h3,
+.amonag__content h3 {
 	text-align: center;
 	color: #ff420e;
 	font-weight: bold;
@@ -545,8 +558,6 @@ p {
 .social__network a:hover {
 	background: #ff420e;
 }
-
-
 
 
 
