@@ -340,6 +340,7 @@ img {
 	height: 100%;
 	overflow: auto;
 	display: none;
+	width: 540px;
 }
 .sidebar__nav ul {
 	padding-top: 40px;

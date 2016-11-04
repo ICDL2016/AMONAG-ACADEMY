@@ -2,14 +2,14 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1275px) {
-	.sidebar__nav {
-		width: 359px;
-	}
+
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
+@media only screen and (max-width : 800px) {
+	.sidebar__nav {
+		width: 360px;
+	}
 }
 
 
@@ -42,9 +42,7 @@
 	.jQtooltip div {
 		display: none !important;
 	}
-	.sidebar__nav {
-		width: 180px;
-	}
+
 
 
 }
@@ -81,6 +79,9 @@
 	}
 	.restaurant__content {
 		padding-left: 10px;
+	}
+	.sidebar__nav {
+		width: 180px;
 	}
 
 }
