@@ -577,8 +577,25 @@ p {
 .more__articles a:hover {
 	color: rgba(223,82,43,1)
 }
-
-
-
+h4 {
+	font-weight: bold;
+	color: #666;
+	font-size: 18px;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+.list__menu li {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.list__menu li a {
+	color: #666;
+}
+.list__menu {
+	margin-bottom: 15px;
+}
+.list__menu li a:hover {
+	color: rgba(223,82,43,1)
+}
 
 
