@@ -405,6 +405,18 @@ img {
 	width: 120px;
 }
 .highlight {
-	height: 434px;
+	height: 450px;
+	overflow: auto;
+}
+.highlight-2 {
+	height: 350px;
+	overflow: auto;
+}
+.highlight-3 {
+	height: 250px;
+	overflow: auto;
+}
+.highlight-4 {
+	height: 150px;
 	overflow: auto;
 }
