@@ -3,7 +3,6 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1275px) {
 	.sidebar__nav {
-		float: right;
 		width: 359px;
 	}
 }
@@ -43,7 +42,9 @@
 	.jQtooltip div {
 		display: none !important;
 	}
-
+	.sidebar__nav {
+		width: 180px;
+	}
 
 }
 

@@ -125,32 +125,7 @@ $(document).ready(function () {
 })(jQuery)
 
 
-$(function(){
 
-	$(function(){
-
-
-		var heightPl = document.documentElement.clientHeight;
-
-		if( heightPl < 580 ) {
-			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight" );
-		}
-		if( heightPl < 500 ) {
-			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight-2" );
-		}
-		if( heightPl < 400 ) {
-			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight-3" );
-		}
-		if( heightPl < 300 ) {
-			$( '.nav__btn li .sidebar__nav' ).toggleClass( "highlight-4" );
-		}
-
-	});
-
-
-
-
-})
 
 
 
