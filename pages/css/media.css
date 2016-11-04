@@ -45,13 +45,7 @@
 	.sidebar__nav {
 		width: 180px;
 	}
-	.content__restaurant_bs .restaurant__sidebar {
-		float: none;
-		margin: 0 auto;
-	}
-	.restaurant__content {
-		padding-left: 10px;
-	}
+
 
 }
 
@@ -77,6 +71,16 @@
 		margin: 0 38px 0 8px;
 		position: relative;
 		z-index: 9;
+	}
+
+}
+@media only screen and (max-width : 540px) {
+	.content__restaurant_bs .restaurant__sidebar {
+		float: none;
+		margin: 0 auto;
+	}
+	.restaurant__content {
+		padding-left: 10px;
 	}
 
 }

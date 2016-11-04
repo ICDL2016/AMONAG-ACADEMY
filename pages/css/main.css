@@ -323,7 +323,7 @@ img {
 	font-weight: bold;
 	float: right;
 }
-.item-masonry .price__item .price span {
+.price__item .price span {
 	font-family: 'ALSRubl';
 	font-size: 14px;
 	font-weight: 500;
@@ -350,13 +350,13 @@ img {
 }
 .sidebar__nav a {
 	display: block;
-	border-left: 3px solid #808080;
-	border-bottom: 3px solid #808080;
+	border-left: 2px solid #808080;
+	border-bottom: 2px solid #808080;
 	text-decoration: none;
 	transition: 0.3s;
 }
 .sidebar__nav li:first-child a {
-	border-top: 3px solid #808080;
+	border-top: 2px solid #808080;
 }
 .sidebar__nav a:hover {
 	background: #f34819;
@@ -370,7 +370,7 @@ img {
 }
 .nav__btn li .lang__list {
 	position: absolute;
-	top: 40px;
+	top: 42px;
 	right: 0;
 	display: none;
 }
@@ -383,7 +383,7 @@ img {
 	font-weight: bold;
 }
 .nav__btn li .lang__list li {
-	margin-top: 3px;
+	margin-top: 2px;
 }
 .nav__btn li .lang__list li a:hover {
 	background-color: #fa4716;
@@ -481,6 +481,8 @@ img {
 }
 .subscription__content .time {
 	float: left;
+	font-size: 13px;
+	line-height: 16px;
 }
 .subscription__content .price {
 	float: right;
@@ -495,6 +497,7 @@ img {
 	line-height: 1.4;
 	padding: 8px 0;
 	transition: 0.3s;
+	font-weight: bold;
 }
 .btn__subscribe:hover {
 	background: #ff4410;
@@ -558,7 +561,10 @@ p {
 .social__network a:hover {
 	background: #ff420e;
 }
-
+.subscription__content input[type="text"]::-webkit-input-placeholder {color:#cfcccc;}
+.subscription__content input[type="text"]::-moz-placeholder          {color:#cfcccc;}
+.subscription__content input[type="text"]:-moz-placeholder           {color:#cfcccc;}
+.subscription__content input[type="text"]:-ms-input-placeholder      {color:#cfcccc;}
 
 
 
