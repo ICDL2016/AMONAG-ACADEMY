@@ -623,6 +623,12 @@ h4 {
 	box-sizing: border-box;
 	color: #808080;
 }
+input {
+	font-size: 13px;
+}
+textarea {
+	font-size: 13px;
+}
 .contact__form form {
 	background: rgba(223,82,43,1);
 	overflow: hidden;
