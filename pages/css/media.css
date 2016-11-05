@@ -54,6 +54,13 @@
 	.mobile__search_btn {
 		display: block;
 	}
+	.specialist__block .sp_bl {
+		float: none;
+		margin: 0 auto;
+	}
+	.specialist__block {
+		width: auto;
+	}
 }
 @media only screen and (max-width : 580px) {
 	.header .site__title {
