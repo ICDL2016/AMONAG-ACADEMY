@@ -8,7 +8,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 800px) {
 	.sidebar__nav {
-		width: 360px;
+		max-width: 360px;
 	}
 }
 
