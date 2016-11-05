@@ -643,6 +643,7 @@ textarea {
 	border: none;
 	color: #808080;
 	margin-bottom: 10px;
+	resize: none;
 }
 .contact__form a {
 	display: block;
@@ -738,7 +739,15 @@ a.forgot__password:hover {
 
 
 
-
+.contact__form input[type="submit"] {
+	background: transparent;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
 
 
 
