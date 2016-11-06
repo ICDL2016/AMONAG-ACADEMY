@@ -61,6 +61,18 @@
 	.specialist__block {
 		width: auto;
 	}
+	.form__contact_block label span {
+		float: none;
+		text-align: left;
+		padding-bottom: 5px;
+	}
+	.form__contact_block label input[type='text'] {
+		width: 100%;
+	}
+	.form__contact_block label textarea {
+		width: 100%;
+	}
+	
 }
 @media only screen and (max-width : 580px) {
 	.header .site__title {
