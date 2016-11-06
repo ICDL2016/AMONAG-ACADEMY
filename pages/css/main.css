@@ -901,4 +901,5 @@ a.forgot__password:hover {
 	z-index: 999;
 	font-size: 13px;
 	color: rgba(223,82,43,1);
+	background: #000;
 }

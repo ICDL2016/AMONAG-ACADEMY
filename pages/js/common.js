@@ -144,21 +144,21 @@ $(document).ready(function(){
 	mail.blur(function(){
 		if(mail.val() != ''){
 			if(mail.val().search(pattern) == 0){
-				$('#valid').text('Подходит');
+				$('.valid').css( "color", "green" );
 				$('#submit').attr('disabled', false);
 				mail.removeClass('error').addClass('ok');
 			}else{
-				$('#valid').text('Не подходит');
+				$('.valid').css( "color", "red" );
 				$('#submit').attr('disabled', true);
 				mail.addClass('error');
 			}
 		}else{
-			$('#valid').text('Поле e-mail не должно быть пустым!');
+			$('.valid').css( "", "" );
 			mail.addClass('error');
 			$('#submit').attr('disabled', true);
 		}
 	});
-});	
+});
 
 
 
