@@ -144,16 +144,16 @@ $(document).ready(function(){
 	mail.blur(function(){
 		if(mail.val() != ''){
 			if(mail.val().search(pattern) == 0){
-				$('.valid').css( "color", "green" );
+				$('#valid').css('display','none').text('Подходит');
 				$('#submit').attr('disabled', false);
 				mail.removeClass('error').addClass('ok');
 			}else{
-				$('.valid').css( "color", "red" );
+				$('#valid').css('display','block').text('Не подходит');
 				$('#submit').attr('disabled', true);
 				mail.addClass('error');
 			}
 		}else{
-			$('.valid').css( "", "" );
+			$('#valid').css('display','block').text('Поле e-mail не должно быть пустым!');
 			mail.addClass('error');
 			$('#submit').attr('disabled', true);
 		}
