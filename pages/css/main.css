@@ -638,7 +638,7 @@ textarea {
 	padding: 10px;
 	transition: 0.3s;
 }
-.contact__form textarea {
+.contact__form_block textarea,.contact__form textarea {
 	width: 100%;
 	box-sizing: border-box;
 	font-family: Arial;
@@ -813,7 +813,7 @@ a.forgot__password:hover {
 	border-left: 1px solid rgba(223,82,43,1);
 	color: rgba(223,82,43,1);;
 }
-.contact__form {
+.contact__form_block {
 	background: rgba(223,82,43,1);
 	margin: 20px auto 15px;
 	padding: 15px;
@@ -822,10 +822,7 @@ a.forgot__password:hover {
 	box-sizing: border-box;
 	transition: 0.3s;
 }
-.contact__form:hover {
-	background: #fa4716;
-}
-.contact__form .massage__title {
+.contact__form_block .massage__title {
 	display: block;
 	padding-bottom: 25px;
 	color: #fff;
@@ -876,4 +873,32 @@ a.forgot__password:hover {
 	text-decoration: none;
 	font-size: 12px;
 	float: left;
+}
+.user__info {
+	padding: 10px 0 15px;
+	text-align: center;
+}
+.user__info span {
+	display: block;
+	color: #666;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.ok{
+	border: 1px solid green;
+}
+.error{
+	border: 1px solid red;
+}
+.email__span {
+	position: relative;
+	display: block;
+}
+.email__span #valid {
+	position: absolute;
+	top: 9px;
+	right: 6px;
+	z-index: 999;
+	font-size: 13px;
+	color: rgba(223,82,43,1);
 }
