@@ -161,7 +161,9 @@ $(document).ready(function(){
 });
 
 
-
+$( ".nav__btn>li" ).click(function() {
+	$( this ).toggleClass( "pt__none" );
+});
 
 
 

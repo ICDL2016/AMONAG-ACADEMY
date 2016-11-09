@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="css/media.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 </head>
 
@@ -111,7 +111,7 @@
 						<span class="write">Написать</span>
 						<form action="">
 							<input type="text" placeholder="Имя">
-							<input type="email" name="email" required  placeholder="E-mail">
+							<span class="email__span"><input type="text" placeholder="E-mail" name="mail" id="mail" /> <span id="valid"></span></span>
 							<input type="text" placeholder="Телефон">
 							<textarea placeholder="Сообщение"></textarea>
 							<input type="submit" value="Отправить">
@@ -144,47 +144,19 @@
 			</div>
 
 			<div class="wrap__item bg__white">
+				<ul class="contact__images">
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-4.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-5.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-6.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-7.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-8.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-9.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-10.jpg" alt=""></a></li>
+					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-11.jpg" alt=""></a></li>
+				</ul>
 
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-4.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-5.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-6.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-7.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-8.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-9.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-10.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
-				<div class="item-masonry sizer__post">
-					<a href="#">
-						<img src="img/300-200-11.jpg" alt="">
-					</a>
-				</div><!-- .item-masonry -->
+
+
 
 		</div><!-- .content__item -->
 			<div class="social__network contact__social">
@@ -220,13 +192,17 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/common.js"></script>
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+		<script src="libs/waypoints/waypoints.min.js"></script>
+		<script src="libs/animate/animate-css.js"></script>
+		<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+		<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+		<script src="js/common.js"></script>
+		<script>
+			$('.fancybox').fancybox();
+		</script>
 
 </body>
 </html>
