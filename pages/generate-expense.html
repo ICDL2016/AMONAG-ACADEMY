@@ -30,11 +30,11 @@
 	<link rel="stylesheet" href="css/media.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
-	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
 
 </head>
 
-<body>
+<body class="bg__white">
 	<header class="header">
 		<div class="inner__content">
 			<div class="logo__block jQtooltip" title="Главная страница">
@@ -106,72 +106,77 @@
 		<div class="content__item">
 			<div class="amonag__content">
 				<div class="inside__content">
-					<h3>Контакты</h3>
-					<div class="contact__form">
-						<span class="write">Написать</span>
-						<form action="">
-							<input id="name" name="name" type="text" placeholder="Имя"/>
-							<div class="error-box"></div>
-							<input id="email" name="email" type="text" placeholder="E-mail" />
-							<div class="error-box"></div>
-							<input type="text" placeholder="Телефон">
-							<textarea id="message" name="message" placeholder="Сообщения"></textarea>
-							<div class="error-box"></div>
-							<input type="submit" value="Отправить">
-						</form>
-						<spanc class="calling">Позвонить</spanc>
-						<span class="phone__number">Тел. +7 800 000 00 00</span>
-					</div>
-					<span class="consult">Вас проконсультируют с 10 до 19 по мск:</span>
-					<div class="specialist__block">
-						<div class="sp_bl">
-							<img src="img/spt-1.jpg" alt="">
-							<span>Robert Baratheon</span>
-						</div>
-						<div class="sp_bl">
-							<img src="img/spt-2.jpg" alt="">
-							<span>Robb Stark</span>
-						</div>
-						<div class="sp_bl">
-							<img src="img/spt-3.jpg" alt="">
-							<span>Jofre Baratheon</span>
+					<h3>Сформировать счет</h3>
+					<div class="subscription__unit payment">
+						<img src="img/img-7.jpg" alt="">
+						<div class="subscription__content">
+							<span class="rst__title">Общий курс ресторанного бизнеса «РЕСТОРАТОР»</span>
+							<span class="info">Доступные языки:</span>
+							<span class="lang__span">
+								<span>EN</span>
+								<span>ES</span>
+								<span>RU</span>
+								<span>DE</span>
+								<span>FR</span>
+								<span>IT</span>
+								<span>PT</span>
+								<span>PO</span>
+								<span>ER</span>
+								<span>NO</span>
+							</span>
+							<span class="info">Период подписки</span>
+							<div class="data__time">1 год</div>
+							<span class="info">Объем и стоимость</span>
+							<span class="price__item">
+								<span class="time">300 часов</span>
+								<span class="price">19500<span class="rur">p</span></span>
+							</span>
 						</div>
 					</div>
-					<span class="address__txt">Адрес</span>
-					<span class="address__map">Проспект Мира 150</span>
+					<div class="payment-type">Введите данные организации <br>
+						для формирования счета<br>
+						на оплату для юридических лиц</div>
+
+
+
+					<form class="bill-form">
+						<label><span>Имя*</span>
+							<input id="name" name="name" type="text" class="error">
+							<div class="error-box"></div>
+						</label>
+						<label><span>E-mail*</span>
+							<input id="email" name="email" type="text">
+							<div class="error-box"></div>
+						</label>
+						<label><span>Телефон*</span>
+							<input type="tel">
+						</label>
+						<label><span>Адрес</span>
+							<input type="text">
+						</label>
+						<label><span>Комментарии</span>
+							<textarea id="message" name="message"></textarea>
+							<div class="error-box"></div>
+							<button type="submit" class="m-t-10"> Сформировать квитанцию</button>
+						</label>
+
+					</form>
+					<p class="text-center"><a href="#">Оплачивая услугу, Вы соглашаетесь с условиями договора оферты.</a></p>
+
+
+
+
+
+
+
+
+
+
+
 				</div>
 			</div>
 
-			<div class="map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fav9mVcRkYKkFHa-C9t5OeH6Cp6K3aRA&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=falce"></script>
-			</div>
-
-			<div class="wrap__item bg__white">
-				<ul class="contact__images">
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-4.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-5.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-6.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-7.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-8.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-9.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-10.jpg" alt=""></a></li>
-					<li><a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-11.jpg" alt=""></a></li>
-				</ul>
-
-
-
-
 		</div><!-- .content__item -->
-			<div class="social__network contact__social">
-				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			</div>
-		
 
 	</div>
 
@@ -195,17 +200,13 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-		<script src="libs/waypoints/waypoints.min.js"></script>
-		<script src="libs/animate/animate-css.js"></script>
-		<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-		<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-		<script src="js/common.js"></script>
-		<script>
-			$('.fancybox').fancybox();
-		</script>
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>

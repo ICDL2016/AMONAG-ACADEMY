@@ -942,19 +942,184 @@ a.forgot__password:hover {
 	display: inline-block;
 	margin: 4px 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.payment-type {
+	color: #777;
+	font-size: 16px;
+	text-align: center;
+	padding: 15px 0;
+}
+.pay-form {
+	margin-bottom: 15px;
+}
+.pay a {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #777;
+}
+.pay-form__item {
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.pay-form__item input {
+	display: none;
+}
+input:not([type="submit"]), textarea {
+	padding: 6px 10px 4px;
+	border: 2px solid #fa4716;
+	font-size: 14px;
+	color: #666;
+}
+.pay-form__content {
+	width: 265px;
+	display: inline-block;
+	text-align: center;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding: 5px 10px 15px;
+	position: relative;
+	height: 160px;
+	background: #fff;
+	box-sizing: border-box;
+}
+.pay-form__content:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	border: 1px solid #fa4716;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.pay-form__content_card .pay-form__img {
+	margin-bottom: 15px;
+}
+.pay-form__img {
+	height: 96px;
+	line-height: 105px;
+}
+.pay-form__content img {
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 100px;
+	max-width: 150px;
+}
+.pay-form__title {
+	color: #fa4716;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 21px;
+	min-height: 40px;
+}
+.pay-form__sub-title {
+	color: #fa4716;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: -7px;
+}
+.pay-form__content_card img {
+	margin-top: 4px;
+	max-width: 190px;
+	max-height: initial;
+}
+.pay-form__img_sber img {
+	max-width: 230px;
+}
+.pay-form__item:hover .pay-form__content:before {
+	border: 7px solid #fa4716;
+}
+.pay-form__content_bill img {
+	-webkit-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+	max-height: 80px;
+}
+.pay-form__content_bill .pay-form__img {
+	margin-top: -5px;
+}
+.text-center {
+	padding-top: 15px;
+	text-align: center;
+}
+.text-center a {
+	color: #666;
+}
+.bill-form {
+	max-width: 300px;
+	margin: 0 auto;
+}
+.bill-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+.bill-form span {
+	display: block;
+	padding: 5px 0 2px;
+	color: #fff;
+	background: rgba(223,82,43,1);
+	text-align: center;
+}
+.bill-form input, .bill-form textarea {
+	background: #fff;
+}
+.bill-form input, .bill-form textarea, .bill-form button {
+	width: 100%;
+}
+input:not([type="submit"]), textarea {
+	padding: 6px 10px 4px;
+	border: 2px solid rgba(223,82,43,1);
+	font-size: 14px;
+	color: #666;
+	box-sizing: border-box;
+}
+.bill-form label div.error-box {
+	border-color: transparent !important;
+}
+.bill-form label div {
+	border: 1px solid rgba(223,82,43,1);
+}
+.error-box {
+	text-align: left;
+	font-size: 12px;
+}
+.bill-form input, .bill-form textarea, .bill-form button {
+	width: 100%;
+}
+.m-t-10 {
+	margin-top: 10px;
+}
+[type=submit], .btn {
+	padding: 9px 30px 9px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(223,82,43,1);
+	-webkit-border-radius: 4px;
+	border-radius: 0px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 21px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.color__wh {
+	color: #fff !important;
+}
+.bill-form textarea {
+	resize: none;
+}
+[type=submit]:hover, .btn:hover {
+	background: #fa4716;
+}
+.scope__block img {
+	display: block;
+	margin: 15px auto;
+}
+.contact__form form .error-box {
+	color: #fff !important;
+}
