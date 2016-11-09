@@ -964,12 +964,6 @@ a.forgot__password:hover {
 .pay-form__item input {
 	display: none;
 }
-input:not([type="submit"]), textarea {
-	padding: 6px 10px 4px;
-	border: 2px solid #fa4716;
-	font-size: 14px;
-	color: #666;
-}
 .pay-form__content {
 	width: 265px;
 	display: inline-block;
@@ -981,6 +975,9 @@ input:not([type="submit"]), textarea {
 	height: 160px;
 	background: #fff;
 	box-sizing: border-box;
+}
+input[type="file"] {
+	padding: 0 !important;
 }
 .pay-form__content:before {
 	content: '';
@@ -1071,7 +1068,6 @@ input:not([type="submit"]), textarea {
 	padding: 6px 10px 4px;
 	border: 2px solid rgba(223,82,43,1);
 	font-size: 14px;
-	color: #666;
 	box-sizing: border-box;
 }
 .bill-form label div.error-box {
@@ -1123,3 +1119,134 @@ input:not([type="submit"]), textarea {
 .contact__form form .error-box {
 	color: #fff !important;
 }
+.overrides {
+	margin-bottom: 40px;
+}
+.text-center {
+	text-align: center;
+}
+.overflow-wrap {
+	overflow-x: scroll;
+}
+table.bx-interface-grid {
+	width: 100%;
+	cursor: default;
+	color: black;
+	border-collapse: separate;
+}
+
+table.bx-interface-grid tr.bx-grid-gutter td.bx-left {
+	border-left: 1px solid #d6d6d6;
+}
+table.bx-interface-grid tr.bx-grid-gutter td {
+	height: 5px;
+	background-color: #e5e5e5;
+	border-right: 1px solid #ebebeb;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-left: none;
+	padding: 0;
+}
+table.bx-interface-grid td.bx-left {
+	border-left: 1px solid #ededed;
+}
+.overrides .bx-grid-head *, .overrides .bx-grid-gutter * {
+	background: rgba(223,82,43,1) !important;
+	color: #fff !important;
+}
+table.bx-interface-grid td {
+	padding: 5px;
+	font-size: 100%;
+	border-right: 1px solid #ededed;
+	vertical-align: top;
+}
+.overrides .bx-grid-head *, .overrides .bx-grid-gutter * {
+	background: rgba(223,82,43,1) !important;
+	color: #fff !important;
+}
+div.empty {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+table.bx-interface-grid tr.bx-grid-gutter td {
+	height: 5px;
+	background-color: #e5e5e5;
+	border-right: 1px solid #ebebeb;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-left: none;
+	padding: 0;
+}
+table.bx-interface-grid a.bx-action div {
+	cursor: pointer;
+	width: 26px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+}
+table.bx-interface-grid tr.bx-odd td {
+	background-color: white;
+}
+.overrides .bx-grid-footer td, .overrides .modern-page-title {
+	background: rgba(223,82,43,1) !important;
+	color: #fff !important;
+}
+.overrides .bx-interface-grid * {
+	border-color: rgba(223,82,43,1) !important;
+}
+table.bx-interface-grid tr.bx-even td {
+	background-color: #f2f2f2;
+}
+table.bx-interface-grid tr.bx-bottom td {
+	border-bottom: 0;
+}
+table.bx-interface-grid td.bx-left {
+	border-left: 1px solid #ededed;
+}
+table.bx-interface-grid td {
+	padding: 7px 5px 3px 5px;
+	font-size: 88%;
+	border-right: 1px solid #ededed;
+	vertical-align: top;
+}
+.overrides .message-form {
+	margin-top: 30px;
+}
+table.support-ticket-edit-form {
+	width: 100%;
+	background-color: #F9FAFB;
+	border-collapse: collapse;
+	border: 1px solid #ADC3D5;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 160%;
+}
+table.support-ticket-edit-form th {
+	border-bottom: 1px solid #ADC3D5;
+}
+table.support-ticket-edit-form td.field-name {
+	text-align: right;
+	vertical-align: top;
+}
+.overrides .message-form *:not(input):not(textarea) {
+	background: rgba(223,82,43,1) !important;
+	color: #fff !important;
+	border-color: rgba(223,82,43,1) !important;
+}
+.overrides .message-form [type="text"], .overrides .message-form textarea {
+	width: 90%;
+	resize: none;
+}
+table.support-ticket-edit-form td, table.support-ticket-edit-form th {
+	padding: 5px;
+	vertical-align: top;
+}
+.support-ticket-edit-form thead th {
+	text-align: left;
+	font-weight: bold;
+}
+
+
+
+
