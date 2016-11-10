@@ -1072,6 +1072,10 @@ input[type="file"] {
 	text-align: center;
 	margin-bottom: -1px;
 }
+.top__min {
+	margin-top: -5px !important;
+	margin-bottom: 5px;
+}
 .bill-form input, .bill-form textarea {
 	background: #fff;
 }
