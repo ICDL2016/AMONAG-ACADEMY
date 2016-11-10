@@ -490,7 +490,6 @@ img {
 .subscription__content .price__item {
 	font-size: 16px;
 	display: block;
-	padding: 0 0 5px;
 	overflow: hidden;
 	color: #fff;
 }
@@ -725,7 +724,7 @@ textarea {
 	padding: 0 0 10px 0;
 }
 .map {
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	background: #fff;
 }
 a.forgot__password {
@@ -741,7 +740,10 @@ a.forgot__password:hover {
 .contact__form form:hover {
 	background: #fa4716;
 }
-
+.money__pr .rur {
+	font-size: 18px;
+	font-weight: bold;
+}
 .contact__form input::-webkit-input-placeholder {color:#b9b7b7;}
 .contact__form input::-moz-placeholder          {color:#b9b7b7;}
 .contact__form input:-moz-placeholder           {color:#b9b7b7;}
@@ -763,14 +765,22 @@ a.forgot__password:hover {
 	margin: 0 -10px;
 }
 .personal__area {
-	max-width: 728px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 35px;
 }
+.personal__area ul {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+.personal__area ul li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 5px -4px;
+}
 .personal__area .subscription__unit {
 	width: 180px;
-	float: left;
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
 	border-top: 2px solid #fff;
@@ -784,7 +794,7 @@ a.forgot__password:hover {
 }
 .quest__btn {
 	display: block;
-	width: 300px;
+	width: 280px;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
@@ -1043,6 +1053,9 @@ input[type="file"] {
 .text-center a {
 	color: #666;
 }
+.text-center a:hover {
+	color: rgba(223,82,43,1);
+}
 .bill-form {
 	max-width: 300px;
 	margin: 0 auto;
@@ -1087,7 +1100,7 @@ input:not([type="submit"]), textarea {
 	margin-top: 10px;
 }
 [type=submit], .btn {
-	padding: 9px 30px 9px;
+	padding: 12px 30px 10px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -1098,10 +1111,15 @@ input:not([type="submit"]), textarea {
 	-webkit-border-radius: 4px;
 	border-radius: 0px;
 	color: #fff;
-	font-size: 16px;
+	font-weight: bold;
+	font-size: 18px;
 	line-height: 21px;
 	cursor: pointer;
 	transition: 0.3s;
+	width: 280px;
+}
+.more__file {
+	cursor: pointer;
 }
 .color__wh {
 	color: #fff !important;
@@ -1115,6 +1133,8 @@ input:not([type="submit"]), textarea {
 .scope__block img {
 	display: block;
 	margin: 15px auto;
+	width: 100%;
+	max-width: 1040px;
 }
 .contact__form form .error-box {
 	color: #fff !important;
