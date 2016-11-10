@@ -45,7 +45,20 @@
 	.specialist__block .sp_bl {
 		margin-bottom: 10px;
 	}
-
+	.support-ticket-edit-form table,
+	.support-ticket-edit-form thead,
+	.support-ticket-edit-form tbody,
+	.support-ticket-edit-form tfoot,
+	.support-ticket-edit-form td,
+	.support-ticket-edit-form tr {
+		display: block;
+	}
+	.overrides .message-form [type="text"], .overrides .message-form textarea {
+		width: 100%;
+	}
+	table.support-ticket-edit-form td.field-name {
+		text-align: left;
+	}
 
 }
 
