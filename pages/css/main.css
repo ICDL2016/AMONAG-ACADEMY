@@ -245,6 +245,7 @@ img {
 }
 .content {
 	margin: 40px 0 0 0;
+	border-top: 2px solid #808080;
 }
 .sizer {
 	width: 180px;
@@ -1295,6 +1296,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	font-weight: bold;
 	padding: 10px;
 	border-bottom: 2px solid #808080;
+	border-top: 2px solid #808080;
 }
 .part_num {
 	color: #fff;
@@ -1303,11 +1305,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	font-weight: bold;
 	font-size: 16px;
 	padding: 10px 0;
-	border-bottom: 2px solid #808080;
 	transition: 0.3s;
 }
 .test__item .subscription__content {
-	background: #f3f3f3 !important;
+	background: #fff !important;
 	transition: 0.3s;
 }
 .test__item .subscription__content .rst__title {
@@ -1326,14 +1327,28 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	transition: 0.3s;
 }
 .test__item .part_num {
-	background: #f3f3f3 !important;
+	background: #fff !important;
 	color: #fd420e !important;
 	transition: 0.3s;
 }
 .test__item:hover .subscription__content,
 .test__item:hover .part_num,
 .test__item:hover a.btn__subscribe {
-	background: #fff !important;
+	background: #fa4716 !important;
+}
+.test__item:hover .subscription__content,
+.test__item:hover .part_num,
+.test__item:hover a.btn__subscribe {
+	color: #fff !important;
+}
+.test__item:hover .subscription__content .rst__title {
+	color: #fff !important;
+}
+.test__item:hover .subscription__content .lang__span {
+	color: #fff !important;
+}
+.test__item:hover .subscription__content .data__time {
+	color: #fff !important;
 }
 .item-masonry:hover .part_num {
 	background: #fa4716;
@@ -1345,6 +1360,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	padding: 0 3px;
 	color: #808080;
 	line-height: 1.3;
+	font-size: 14px;
 }
 .sizer__post:hover .lang__block span {
 	color: #fff;
@@ -1359,6 +1375,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .center__href a:hover {
 	color: #fd420e;
+}
+.top__min_sp {
+	margin-top: -30px;
 }
 .user__ava {
 	padding: 5px;
@@ -1867,4 +1886,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .marketing__research__block .sub-list__link:hover, .sub-list__link_active {
 	background: rgba(223,82,43,1);
 	color: #fff;
+}
+.user__curs .lang__span {
+	border-top: none !important;
+	border-bottom: none !important;
 }
