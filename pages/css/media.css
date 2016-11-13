@@ -59,7 +59,14 @@
 	table.support-ticket-edit-form td.field-name {
 		text-align: left;
 	}
-
+	.marketing__research__block .courses__left {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.marketing__research__block .courses__right {
+		display: block;
+	}
 }
 
 @media only screen and (max-width : 640px) {

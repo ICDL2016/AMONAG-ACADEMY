@@ -302,6 +302,19 @@ $(document).ready(function(){
 
 	}); // end submit()
 
+	$(".wrapper_tab .tab").click(function() {
+		$(".wrapper_tab .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+
+	$( ".lang__show" ).click(function() {
+		$( '.left__lang_block' ).toggleClass( "active" );
+	});
+
+
+
+
 
 }); // end script
 
