@@ -1060,6 +1060,15 @@ input[type="file"] {
 .text-center a {
 	color: #666;
 }
+a {
+	transition: 0.3s;
+}
+.marketing__research__block .courses__right a:hover {
+	color: rgba(223,82,43,1);
+}
+.marketing__research__block .courses__right a i {
+	margin-right: 5px;
+}
 .text-center a:hover {
 	color: rgba(223,82,43,1);
 }
