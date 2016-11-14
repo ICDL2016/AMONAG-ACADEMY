@@ -1054,7 +1054,7 @@ input[type="file"] {
 	margin-top: -5px;
 }
 .text-center {
-	padding-top: 15px;
+	padding-top: 30px;
 	text-align: center;
 }
 .text-center a {
@@ -1467,6 +1467,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .header__navigation {
 	position: relative;
+	padding-bottom: 30px;
 }
 .header__navigation .page-nav-wrap {
 	background-color: rgba(223,82,43,1);
@@ -1898,4 +1899,110 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .user__curs .lang__span {
 	border-top: none !important;
 	border-bottom: none !important;
+}
+.outside__book_blocks {
+	border: 2px solid rgba(223,82,43,1);
+	margin: 10px;
+	display: table;
+	padding-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.outside__book_blocks .book__row_block {
+	overflow: hidden;
+	display: table-row;
+}
+.outside__book_blocks .book__row_block .td_cell {
+	display: table-cell;
+	border-bottom: 2px solid rgba(223,82,43,1);
+	width: 1000px;
+	border-right: 2px solid rgba(223,82,43,1);
+}
+.book-page .js-sentence {
+	cursor: pointer;
+}
+.td_cell h2 {
+	padding: 8px 0 6px;
+}
+.outside__book_blocks h2 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0;
+}
+.outside__book_blocks .book__row_block span {
+	display: block;
+	padding: 5px 10px;
+	line-height: 17px;
+	min-width: 300px;
+	font-size: 17px;
+}
+.book__container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.book-page {
+	text-align: justify;
+	padding-top: 15px;
+}
+.section__item {
+	border-bottom: 3px solid #cccccc;
+	padding: 5px 0;
+	font-size: 16px;
+	color: #999999;
+	line-height: 18px;
+}
+.book-page .js-sentence {
+	cursor: pointer;
+}
+.section__item h1 {
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	color: #1f0000;
+}
+.section__item h2 {
+	font-size: 19px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 0 4px;
+	color: #666666;
+}
+.section__item.head__it span {
+	display: block;
+	text-align: center;
+	color: #999999;
+	font-size: 12px;
+}
+.section__item {
+	border-bottom: 3px solid #cccccc;
+	padding: 5px 0;
+	font-size: 16px;
+	color: #999999;
+	line-height: 18px;
+}
+.book-page .js-sentence {
+	cursor: pointer;
+}
+.section__item span {
+	font-size: 12px;
+	line-height: 9px;
+	color: #999999;
+}
+.section__item .sec__title a {
+	display: block;
+	font-size: 20px;
+	color: #000000;
+	padding-bottom: 3px;
+	line-height: 22px;
+	text-decoration: none;
+}
+.section__item p {
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0 0 3px;
+	color: #666666;
 }
