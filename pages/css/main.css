@@ -41,7 +41,7 @@ table {
 }
 /* End of Eric Meyer's CSS Reset */
 html, body {
-	height: 100%;
+	height: 96% !important;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
@@ -110,7 +110,19 @@ body {
 	line-height: 1;
 }
 .site {
-	height: 100%;
+	height: 100% !important;
+}
+.site .content {
+	height: 100% !important;
+}
+.site .content .marketing__research__block {
+	height: 100% !important;
+}
+.site .content .marketing__research__block .courses {
+	height: 100% !important;
+}
+.site .content .marketing__research__block .courses .courses__left {
+	height: 100% !important;
 }
 img {
 	vertical-align: top;
@@ -1542,6 +1554,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	border-style: solid;
 	border-width: 15px 20px 15px 0px;
 	border-color: transparent #989898 transparent transparent;
+}
+.justify__t {
+	text-align: justify;
 }
 .nav-prev:before {
 	position: absolute;
