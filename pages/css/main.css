@@ -1945,6 +1945,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .book-page .js-sentence {
 	cursor: pointer;
 }
+.container_book-out {
+	overflow-x: auto;
+}
 .td_cell h2 {
 	padding: 8px 0 6px;
 }
