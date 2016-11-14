@@ -70,6 +70,9 @@
 	.marketing__research__block .courses {
 		display: block;
 	}
+	.site .content .marketing__research__block .courses .courses__left {
+		height: auto !important;
+	}
 }
 
 @media only screen and (max-width : 640px) {
