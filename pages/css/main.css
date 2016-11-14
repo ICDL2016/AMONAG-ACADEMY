@@ -1704,7 +1704,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	height: 40px;
 }
 .lang__show img {
-
+	height: 100%;
+	max-width: 40px;
+	max-height: 40px;
 }
 
 .languages-form {
