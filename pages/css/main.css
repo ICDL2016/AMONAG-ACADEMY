@@ -1440,7 +1440,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
  }
 .book__page {
 	text-align: justify;
-	padding: 30px 0 0;
+	padding: 10px 0 0;
 	max-width: 1000px;
 	margin: 0 auto;
 }
