@@ -1467,6 +1467,12 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	text-decoration: underline;
 	color: #fa4716;
 }
+.outside__book_blocks .book__row_block span:hover,
+.section__item .sec__title a:hover,
+.book-page .js-sentence:hover {
+	text-decoration: underline;
+	color: rgba(223,82,43,1);
+}
 .book__page span {
 	display: inline-block;
 	text-indent: 25px;
@@ -1672,9 +1678,6 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .book-subnav a:hover {
 	color: rgba(223,82,43,1);
-}
-.left__lang_block.active {
-	left: 0;
 }
 .text-right {
 	text-align: right;
