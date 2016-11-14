@@ -1925,7 +1925,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	border-bottom: none !important;
 }
 .outside__book_blocks {
-	border: 2px solid rgba(223,82,43,1);
+	border: 2px solid #666;
 	margin: 10px;
 	display: table;
 	padding-top: 0;
@@ -1938,9 +1938,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .outside__book_blocks .book__row_block .td_cell {
 	display: table-cell;
-	border-bottom: 2px solid rgba(223,82,43,1);
+	border-bottom: 2px solid #666;
 	width: 1000px;
-	border-right: 2px solid rgba(223,82,43,1);
+	border-right: 2px solid #666;
 }
 .book-page .js-sentence {
 	cursor: pointer;
@@ -1967,7 +1967,6 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .book-page {
 	text-align: justify;
-	padding-top: 15px;
 }
 .section__item {
 	border-bottom: 3px solid #cccccc;
@@ -2029,4 +2028,21 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	line-height: 20px;
 	margin: 0 0 3px;
 	color: #666666;
+}
+.page-nav-wrap:hover {
+	background: #fa4716;
+}
+.page-nav-wrap .nav-next:hover:before {
+	background: #555;
+	color: #fff;
+}
+.page-nav-wrap .nav-next:hover:after {
+	border-color: transparent transparent transparent #555;
+}
+.page-nav-wrap .nav-prev:hover:before {
+	background: #555;
+	color: #fff;
+}
+.page-nav-wrap .nav-prev:hover:after {
+	border-color: transparent #555 transparent transparent;
 }
