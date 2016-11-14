@@ -1691,11 +1691,20 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	padding: 4px 38px 5px;
 }
 .lang__show {
-	padding-top: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.lang__show a {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
 }
 .lang__show img {
-	width: 100%;
-	height: 40px;
+
 }
 
 .languages-form {
