@@ -67,6 +67,9 @@
 	.marketing__research__block .courses__right {
 		display: block;
 	}
+	.marketing__research__block .courses {
+		display: block;
+	}
 }
 
 @media only screen and (max-width : 640px) {
