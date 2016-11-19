@@ -270,12 +270,12 @@ img {
 .sizer__post {
 	width: 300px;
 }
-.item-masonry img {
+.item-masonry img, .item-masonry_post img {
 	width: 100%;
 	opacity: 0.9;
 	transition: 0.3s;
 }
-.item-masonry a {
+.item-masonry a, .item-masonry_post a {
 	display: block;
 	background: #f3f3f3;
 	border-left: 2px solid #808080;
@@ -285,10 +285,10 @@ img {
 	transition: 0.3s;
 	text-transform: uppercase;
 }
-.item-masonry a:hover {
+.item-masonry a:hover, .item-masonry_post a:hover {
 	background-color: #f34819;
 }
-.item-masonry .item__title {
+.item-masonry .item__title,.item-masonry_post .item__title {
 	display: block;
 	color: #ff420e;
 	font-size: 15px;
@@ -296,24 +296,29 @@ img {
 	padding-bottom: 5px;
 	transition: 0.3s;
 }
-.item-masonry a:hover .item__title {
+.item-masonry a:hover .item__title,
+.item-masonry_post a:hover .item__title {
 	color: #fff;
 }
-.item-masonry .item__content {
+.item-masonry .item__content,
+.item-masonry_post .item__content {
 	display: block;
 	padding: 6px 8px;
 }
-.item-masonry .description {
+.item-masonry .description,
+.item-masonry_post .description {
 	font-size: 12px;
 	color: #808080;
 	line-height: 1.2;
 	padding-bottom: 5px;
 	display: block;
 }
-.item-masonry a:hover .description {
+.item-masonry a:hover .description,
+.item-masonry_post a:hover .description {
 	color: #c0c0c0;
 }
-.item-masonry .lang__span {
+.item-masonry .lang__span,
+.item-masonry_post .lang__span {
 	display: block;
 	border-top: 1px solid #9d9d9d;
 	border-bottom: 1px solid #9d9d9d;
@@ -322,7 +327,8 @@ img {
 	line-height: 1.2;
 	font-size: 12px;
 }
-.item-masonry a:hover .lang__span {
+.item-masonry a:hover .lang__span,
+.item-masonry_post a:hover .lang__span {
 	border-color: #9d7266;
 	color: #c9c0c0;
 }

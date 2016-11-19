@@ -65,14 +65,14 @@ $(document).ready(function () {
 
 	var sizer__post = '.sizer__post';
 
-	var container = $('.wrap__item');
+		var containerPost = $('.wrap__item_post');
 
-	container.imagesLoaded(function () {
-		container.masonry({
-			itemSelector: '.item-masonry',
-			columnWidth: sizer__post
+		containerPost.imagesLoaded(function () {
+			containerPost.masonry({
+				itemSelector: '.item-masonry_post',
+				columnWidth: sizer__post
+			});
 		});
-	});
 
 
 	$(".burger").click(function(){
