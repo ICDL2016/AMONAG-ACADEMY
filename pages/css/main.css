@@ -1200,7 +1200,7 @@ table.bx-interface-grid tr.bx-grid-gutter td.bx-left {
 	border-left: 1px solid #d6d6d6;
 }
 table.bx-interface-grid tr.bx-grid-gutter td {
-	height: 5px;
+	height: 0;
 	background-color: #e5e5e5;
 	border-right: 1px solid #ebebeb;
 	border-top: 1px solid #d9d9d9;
@@ -1230,15 +1230,6 @@ div.empty {
 	height: 1px;
 	overflow: hidden;
 }
-table.bx-interface-grid tr.bx-grid-gutter td {
-	height: 5px;
-	background-color: #e5e5e5;
-	border-right: 1px solid #ebebeb;
-	border-top: 1px solid #d9d9d9;
-	border-bottom: 0;
-	border-left: none;
-	padding: 0;
-}
 table.bx-interface-grid a.bx-action div {
 	cursor: pointer;
 	width: 26px;
@@ -1266,10 +1257,11 @@ table.bx-interface-grid td.bx-left {
 	border-left: 1px solid #ededed;
 }
 table.bx-interface-grid td {
-	padding: 7px 5px 3px 5px;
-	font-size: 88%;
+	padding: 0 5px 0 5px;
+	font-size: 14px;
 	border-right: 1px solid #ededed;
-	vertical-align: top;
+	vertical-align: middle;
+	height: 30px;
 }
 .overrides .message-form {
 	margin-top: 30px;
