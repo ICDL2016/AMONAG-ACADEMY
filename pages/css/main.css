@@ -2068,3 +2068,18 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .page-nav-wrap .nav-prev:hover:after {
 	border-color: transparent #555 transparent transparent;
 }
+.img__size_300-200 img {
+	width: 300px;
+	height: 200px;
+}
+.img__size_210-140 img {
+	width: 210px;
+	height: 140px;
+}
+.img__size_150-100 img {
+	width: 150px;
+	height: 100px;
+}
+.m-t-15 {
+	padding-bottom: 25px;
+}
