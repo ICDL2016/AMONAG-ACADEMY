@@ -2087,3 +2087,6 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .admin__header .header {
 	top: 148px;
 }
+.admin__header-turn .header {
+	top: 41px;
+}
