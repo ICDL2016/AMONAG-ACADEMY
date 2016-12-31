@@ -2083,3 +2083,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .m-t-15 {
 	padding-bottom: 25px;
 }
+
+.admin__header .header {
+	top: 148px;
+}
