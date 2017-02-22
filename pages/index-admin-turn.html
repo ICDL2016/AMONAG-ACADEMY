@@ -506,6 +506,11 @@
 			});
 
 		});
+
+		$(window).scroll(function(){
+			$('.sidebar__nav ').toggleClass('admin__nav-turn', $(this).scrollTop() > 0);
+		});
+
 	</script>
 
 </body>

@@ -196,6 +196,7 @@ img {
 	float: right;
 	cursor: pointer;
 	padding: 11px 7px 3px 7px;
+	z-index: 999;
 }
 .burger span {
 	display: block;
@@ -2089,4 +2090,17 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .admin__header-turn .header {
 	top: 41px;
+}
+.admin__header-turn .sidebar__nav ul {
+	padding-top: 81px;
+}
+.admin__nav-turn ul {
+	padding-top: 40px !important;
+}
+
+.admin__header .sidebar__nav ul {
+	padding-top: 188px;
+}
+.admin__nav ul {
+	padding-top: 40px !important;
 }
