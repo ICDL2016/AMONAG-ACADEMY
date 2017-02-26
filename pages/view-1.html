@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 	<script src="libs/modernizr/modernizr.js"></script>
 
 
@@ -71,11 +71,6 @@
 					</a>
 				</div>
 				<div class="user__ava">
-					<a class="lang__global" href="#">
-						<i class="fa fa-globe" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="user__ava">
 					<a class="volume__icon" href="#">
 						<i class="fa fa-volume-up" aria-hidden="true"></i>
 					</a>
@@ -99,174 +94,965 @@
 			<li><a href="#">Найти новые курсы</a></li>
 		</ul>
 	</div>
-	<div class="left__select_lg_block">
-		<div class="inside__block">
-			<div class="languages-nav">
-				<ul class="languages-nav__list">
-					<li class="book-nav__item js-slide-parent">
-						<form action="/" class="languages-form js-languages-list">
-							<div class="text-right">
-								<a class="apply__btn" href="#">Apply</a>
+
+	<div class="left__sidebar_box">
+
+		<div class="inside__sidebar_box">
+			<span class="settings__span rel">Settings <i class="fa fa-question" aria-hidden="true"></i></span>
+			<div class="content__tb">
+				<div class="content__box">
+					<div class="tab__box">
+						<div class="inside__tab">
+							<div class="set__tab_content">
+								<span>Settings</span>
+								<a href="#">Apply</a>
 							</div>
-							<ol class="book-subnav-list"></ol><a href="" class="book-subnav-list__add js-add-lang">+</a>
-							<ul class="book-subnav-list-slide">
+							<span class="settings__span">Languages <i class="fa fa-question" aria-hidden="true"></i></span>
+							<ol class="select__block">
 								<li>
 									<div class="select-wrap">
-										<select name="">
-											<option value="slides1">Slides 1</option>
-											<option value="slides2">Slides 2</option>
-											<option value="slides3">Slides 3</option>
+										<select name="primary" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="318" selected="selected">EN (English)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
 										</select>
-									</div><span title="Information" class="languages-info">?</span>
+									</div>
 								</li>
 								<li>
 									<div class="select-wrap">
-										<select name="">
-											<option value="view1">View 1</option>
-											<option value="view2">View 2</option>
-											<option value="view3">View 3</option>
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317" selected="selected">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
 										</select>
-									</div><span title="Information" class="languages-info">?</span>
+									</div>
 								</li>
-							</ul>
-						</form>
-					</li>
-				</ul>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319" selected="selected">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+							</ol>
+							<a href="" class="book-subnav-list__add js-add-lang">+</a>
+							<span class="settings__span">Display</span>
+							<ol class="select__block bottom__menu_ol">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">View 1</option>
+											<option value="317">View 2</option>
+											<option value="318">View 3</option>
+											<option value="319">View 4</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Slides 1</option>
+											<option value="">Slides 2</option>
+											<option value="">Slides 3</option>
+											<option value="">Slides 4</option>
+											<option value="">Slides 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font size 2</option>
+											<option value="">Font size 1</option>
+											<option value="">Font size 3</option>
+											<option value="">Font size 4</option>
+											<option value="">Font size 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font color 1</option>
+											<option value="">Font color 2</option>
+											<option value="">Font color 3</option>
+											<option value="">Font color 4</option>
+											<option value="">Font color 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Background 1</option>
+											<option value="">Background 2</option>
+											<option value="">Background 3</option>
+											<option value="">Background 4</option>
+											<option value="">Background 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="tab__box">
+						<div class="inside__tab">
+							<div class="set__tab_content">
+								<span>Settings</span>
+								<a href="#">Apply</a>
+							</div>
+							<span class="settings__span">Languages <i class="fa fa-question" aria-hidden="true"></i></span>
+							<ol class="select__block">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="318">EN (English)</option>
+											<option value="319" selected="selected">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317" selected="selected">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421" selected="selected">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+							</ol>
+							<a href="" class="book-subnav-list__add js-add-lang">+</a>
+							<span class="settings__span">Display</span>
+							<ol class="select__block bottom__menu_ol">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">View 1</option>
+											<option value="317">View 2</option>
+											<option value="318">View 3</option>
+											<option value="319">View 4</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Slides 1</option>
+											<option value="">Slides 2</option>
+											<option value="">Slides 3</option>
+											<option value="">Slides 4</option>
+											<option value="">Slides 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font size 2</option>
+											<option value="">Font size 1</option>
+											<option value="">Font size 3</option>
+											<option value="">Font size 4</option>
+											<option value="">Font size 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font color 1</option>
+											<option value="">Font color 2</option>
+											<option value="">Font color 3</option>
+											<option value="">Font color 4</option>
+											<option value="">Font color 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Background 1</option>
+											<option value="">Background 2</option>
+											<option value="">Background 3</option>
+											<option value="">Background 4</option>
+											<option value="">Background 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="tab__box">
+						<div class="inside__tab">
+							<div class="set__tab_content">
+								<span>Settings</span>
+								<a href="#">Apply</a>
+							</div>
+							<span class="settings__span">Languages <i class="fa fa-question" aria-hidden="true"></i></span>
+							<ol class="select__block">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="318">EN (English)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422" selected="selected">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423" selected="selected">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319" selected="selected">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+							</ol>
+							<a href="" class="book-subnav-list__add js-add-lang">+</a>
+							<span class="settings__span">Display</span>
+							<ol class="select__block bottom__menu_ol">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">View 1</option>
+											<option value="317">View 2</option>
+											<option value="318">View 3</option>
+											<option value="319">View 4</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Slides 1</option>
+											<option value="">Slides 2</option>
+											<option value="">Slides 3</option>
+											<option value="">Slides 4</option>
+											<option value="">Slides 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font size 2</option>
+											<option value="">Font size 1</option>
+											<option value="">Font size 3</option>
+											<option value="">Font size 4</option>
+											<option value="">Font size 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font color 1</option>
+											<option value="">Font color 2</option>
+											<option value="">Font color 3</option>
+											<option value="">Font color 4</option>
+											<option value="">Font color 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Background 1</option>
+											<option value="">Background 2</option>
+											<option value="">Background 3</option>
+											<option value="">Background 4</option>
+											<option value="">Background 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="tab__box">
+						<div class="inside__tab">
+							<div class="set__tab_content">
+								<span>Settings</span>
+								<a href="#">Apply</a>
+							</div>
+							<span class="settings__span">Languages <i class="fa fa-question" aria-hidden="true"></i></span>
+							<ol class="select__block">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="318">EN (English)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421" selected="selected">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317" selected="selected">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319" selected="selected">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+							</ol>
+							<a href="" class="book-subnav-list__add js-add-lang">+</a>
+							<span class="settings__span">Display</span>
+							<ol class="select__block bottom__menu_ol">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">View 1</option>
+											<option value="317">View 2</option>
+											<option value="318">View 3</option>
+											<option value="319">View 4</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Slides 1</option>
+											<option value="">Slides 2</option>
+											<option value="">Slides 3</option>
+											<option value="">Slides 4</option>
+											<option value="">Slides 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font size 2</option>
+											<option value="">Font size 1</option>
+											<option value="">Font size 3</option>
+											<option value="">Font size 4</option>
+											<option value="">Font size 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font color 1</option>
+											<option value="">Font color 2</option>
+											<option value="">Font color 3</option>
+											<option value="">Font color 4</option>
+											<option value="">Font color 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Background 1</option>
+											<option value="">Background 2</option>
+											<option value="">Background 3</option>
+											<option value="">Background 4</option>
+											<option value="">Background 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="tab__box">
+						<div class="inside__tab">
+							<div class="set__tab_content">
+								<span>Settings</span>
+								<a href="#">Apply</a>
+							</div>
+							<span class="settings__span">Languages <i class="fa fa-question" aria-hidden="true"></i></span>
+							<ol class="select__block">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="318">EN (English)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424" selected="selected">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317" selected="selected">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319" selected="selected">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+							</ol>
+							<a href="" class="book-subnav-list__add js-add-lang">+</a>
+							<span class="settings__span">Display</span>
+							<ol class="select__block bottom__menu_ol">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">View 1</option>
+											<option value="317">View 2</option>
+											<option value="318">View 3</option>
+											<option value="319">View 4</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Slides 1</option>
+											<option value="">Slides 2</option>
+											<option value="">Slides 3</option>
+											<option value="">Slides 4</option>
+											<option value="">Slides 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font size 2</option>
+											<option value="">Font size 1</option>
+											<option value="">Font size 3</option>
+											<option value="">Font size 4</option>
+											<option value="">Font size 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font color 1</option>
+											<option value="">Font color 2</option>
+											<option value="">Font color 3</option>
+											<option value="">Font color 4</option>
+											<option value="">Font color 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Background 1</option>
+											<option value="">Background 2</option>
+											<option value="">Background 3</option>
+											<option value="">Background 4</option>
+											<option value="">Background 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="tab__box">
+						<div class="inside__tab">
+							<div class="set__tab_content">
+								<span>Settings</span>
+								<a href="#">Apply</a>
+							</div>
+							<span class="settings__span">Languages <i class="fa fa-question" aria-hidden="true"></i></span>
+							<ol class="select__block">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317" selected="selected">RU (Русский)</option>
+											<option value="318">EN (English)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317" selected="selected">RU (Русский)</option>
+											<option value="319">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Выберите язык</option>
+											<option value="317">RU (Русский)</option>
+											<option value="319" selected="selected">ES (Español)</option>
+											<option value="421">FR (Français)</option>
+											<option value="422">DE (Deutsch)</option>
+											<option value="423">PT (Português)</option>
+											<option value="424">IT (Italiano)</option>
+											<option value="425">PL (Polski)</option>
+											<option value="426">TR (Türkçe)</option>
+											<option value="427">AR (العربية)</option>
+											<option value="428">ZH (中文, 汉语)</option>
+										</select>
+									</div>
+								</li>
+							</ol>
+							<a href="" class="book-subnav-list__add js-add-lang">+</a>
+							<span class="settings__span">Display</span>
+							<ol class="select__block bottom__menu_ol">
+								<li>
+									<div class="select-wrap">
+										<select name="primary" class="js-lang-select">
+											<option value="">View 1</option>
+											<option value="317">View 2</option>
+											<option value="318">View 3</option>
+											<option value="319">View 4</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Slides 1</option>
+											<option value="">Slides 2</option>
+											<option value="">Slides 3</option>
+											<option value="">Slides 4</option>
+											<option value="">Slides 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font size 2</option>
+											<option value="">Font size 1</option>
+											<option value="">Font size 3</option>
+											<option value="">Font size 4</option>
+											<option value="">Font size 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Font color 1</option>
+											<option value="">Font color 2</option>
+											<option value="">Font color 3</option>
+											<option value="">Font color 4</option>
+											<option value="">Font color 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+								<li>
+									<div class="select-wrap">
+										<select name="secondary[]" class="js-lang-select">
+											<option value="">Background 1</option>
+											<option value="">Background 2</option>
+											<option value="">Background 3</option>
+											<option value="">Background 4</option>
+											<option value="">Background 5</option>
+										</select>
+									<span class="quest__i">
+										<i class='fa fa-question' aria-hidden='true'></i>
+									</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="tbs__tb_block">
+					<span class="tab__tb active">EN</span>
+					<span class="tab__tb">ES</span>
+					<span class="tab__tb">DE</span>
+					<span class="tab__tb">FR</span>
+					<span class="tab__tb">IT</span>
+					<span class="tab__tb">RU</span>
+				</div>
 			</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</div>
-
-	</div><!-- .left__select_lg_block -->
-	<div class="left__lang_block">
-		<div class="inside__block">
-			<div class="wrapper_tab">
-				<div class="tabs">
-					<span class="tab">En</span>
-					<span class="tab">Es</span>
-					<span class="tab">De</span>
-					<span class="tab">Fr</span>
-					<span class="tab">It</span>
-				</div>
-				<div class="tab_content">
-					<div class="tab_item">
-						<div data-content="en" class="book-nav__languages-content languages-content active">
-							<div data-content-title="en" class="languages-content__title">Title EN<i data-lang="en" class="fa fa-pencil edit-book__title"></i></div>
-							<div class="languages-content__content js-slide-parent"><a href="#" class="book-nav__link">Content EN
-								<div title="Включение/выключение режима активации редактирования" class="fa fa-lock js-active-pages-edit"></div></a>
-								<div class="book-nav__sub js-slide-child">
-									<div class="book-subnav">
-										<div class="book-subnav__item"><a href="" class="book-subnav__title js-redact-item tooltipstered"> Глава 1</a><a href="" class="book-subnav__part js-redact-item tooltipstered">Часть 1</a><a href="http://google.com" target="_blank" class="book-subnav__link js-redact-item tooltipstered">Страница 1</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 2</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 3</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab_item">
-						<div data-content="en" class="book-nav__languages-content languages-content active">
-							<div data-content-title="en" class="languages-content__title">Title ES<i data-lang="en" class="fa fa-pencil edit-book__title"></i></div>
-							<div class="languages-content__content js-slide-parent"><a href="#" class="book-nav__link">Content ES
-								<div title="Включение/выключение режима активации редактирования" class="fa fa-lock js-active-pages-edit"></div></a>
-								<div class="book-nav__sub js-slide-child">
-									<div class="book-subnav">
-										<div class="book-subnav__item"><a href="" class="book-subnav__title js-redact-item tooltipstered"> Глава 1</a><a href="" class="book-subnav__part js-redact-item tooltipstered">Часть 1</a><a href="http://google.com" target="_blank" class="book-subnav__link js-redact-item tooltipstered">Страница 1</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 2</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 3</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab_item">
-						<div data-content="en" class="book-nav__languages-content languages-content active">
-							<div data-content-title="en" class="languages-content__title">Title DE<i data-lang="en" class="fa fa-pencil edit-book__title"></i></div>
-							<div class="languages-content__content js-slide-parent"><a href="#" class="book-nav__link">Content DE
-								<div title="Включение/выключение режима активации редактирования" class="fa fa-lock js-active-pages-edit"></div></a>
-								<div class="book-nav__sub js-slide-child">
-									<div class="book-subnav">
-										<div class="book-subnav__item"><a href="" class="book-subnav__title js-redact-item tooltipstered"> Глава 1</a><a href="" class="book-subnav__part js-redact-item tooltipstered">Часть 1</a><a href="http://google.com" target="_blank" class="book-subnav__link js-redact-item tooltipstered">Страница 1</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 2</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 3</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab_item">
-						<div data-content="en" class="book-nav__languages-content languages-content active">
-							<div data-content-title="en" class="languages-content__title">Title FR<i data-lang="en" class="fa fa-pencil edit-book__title"></i></div>
-							<div class="languages-content__content js-slide-parent"><a href="#" class="book-nav__link">Content FR
-								<div title="Включение/выключение режима активации редактирования" class="fa fa-lock js-active-pages-edit"></div></a>
-								<div class="book-nav__sub js-slide-child">
-									<div class="book-subnav">
-										<div class="book-subnav__item"><a href="" class="book-subnav__title js-redact-item tooltipstered"> Глава 1</a><a href="" class="book-subnav__part js-redact-item tooltipstered">Часть 1</a><a href="http://google.com" target="_blank" class="book-subnav__link js-redact-item tooltipstered">Страница 1</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 2</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 3</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab_item">
-						<div data-content="en" class="book-nav__languages-content languages-content active">
-							<div data-content-title="en" class="languages-content__title">Title IT<i data-lang="en" class="fa fa-pencil edit-book__title"></i></div>
-							<div class="languages-content__content js-slide-parent"><a href="#" class="book-nav__link">Content IT
-								<div title="Включение/выключение режима активации редактирования" class="fa fa-lock js-active-pages-edit"></div></a>
-								<div class="book-nav__sub js-slide-child">
-									<div class="book-subnav">
-										<div class="book-subnav__item"><a href="" class="book-subnav__title js-redact-item tooltipstered"> Глава 1</a><a href="" class="book-subnav__part js-redact-item tooltipstered">Часть 1</a><a href="http://google.com" target="_blank" class="book-subnav__link js-redact-item tooltipstered">Страница 1</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 2</a><a href="" class="book-subnav__link js-redact-item tooltipstered">Страница 3</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="sidebar__links">
+			<h3>Harry Potter y la piedra filosofal</h3>
+			<ol>
+				<li><a href="#">1. The boy who lived</a></li>
+				<li><a href="#">2. The vanishing glass</a></li>
+				<li><a href="#">3. The letters from no on</a></li>
+				<li><a href="#">4. The keeper of the keys</a></li>
+				<li><a href="#">5. The boy who lived</a></li>
+				<li><a href="#">6. The vanishing glass</a></li>
+				<li><a href="#">7. The letters from no one</a></li>
+				<li><a href="#">8. The keeper of the keys</a></li>
+				<li><a href="#">9. The boy who lived</a></li>
+				<li><a href="#">10. The vanishing glass</a></li>
+				<li><a href="#">11. The letters from no one</a></li>
+				<li><a href="#">12. The keeper of the keys</a></li>
+			</ol>
 		</div>
-
-
 
 	</div>
+
+
+	<div class="close__window"></div>
+
 
 	<div class="content">
 		<div class="book__page">
 			<h1>Harry Potter and the philosopher’s stone</h1>
 			<h3>The boy who lived</h3>
-			<span> Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet"> Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that
 				they were perfectly normal, thank you very much.</span>
-			<span>They were the last people you’d expect to be involved in anything strange or mysterious,
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">They were the last people you’d expect to be involved in anything strange or mysterious,
 				because they just didn’t hold with such nonsense.</span><br>
-			<span>Mr Dursley was the director of a firm called Grunnings, which made drills.</span>
-			<span>He was a big, beefy man with hardly any neck, although he did have a very large moustache.</span>
-			<span>Mrs Dursley was thin and blonde and had nearly twice the usual amount of neck, which
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">Mr Dursley was the director of a firm called Grunnings, which made drills.</span>
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">He was a big, beefy man with hardly any neck, although he did have a very large moustache.</span>
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">Mrs Dursley was thin and blonde and had nearly twice the usual amount of neck, which
 				came in very useful as she spent so much of her time craning over garden fences, spying on the neighbours.</span>
-			<span>The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.</span><br>
-			<span> The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.</span><br>
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet"> The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was
 				that somebody would discover it. They didn’t think they could bear it if anyone found out about the Potters.</span>
-			<span> Mrs Potter was Mrs Dursley’s sister, but they hadn’t met for several years; in fact, Mrs
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet"> Mrs Potter was Mrs Dursley’s sister, but they hadn’t met for several years; in fact, Mrs
 				Dursley pretended she didn’t have a sister, because her sister and her good-for-nothing husband
 				were as unDursleyish as it was possible to be.</span>
-			<span>The Dursleys shuddered to think what the neighbours would say if the Potters arrived in the street.</span>
-			<span>The Dursleys knew that the Potters had a small son, too, but they had never even seen him.</span>
-			<span>This boy was another good reason for keeping the Potters away; they didn’t want Dudley mixing with a child like that.</span>
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">The Dursleys shuddered to think what the neighbours would say if the Potters arrived in the street.</span>
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">The Dursleys knew that the Potters had a small son, too, but they had never even seen him.</span>
+			<span class="jQtooltip txtool" title="Lorem ipsum dolor sit amet">This boy was another good reason for keeping the Potters away; they didn’t want Dudley mixing with a child like that.</span>
 		</div>
+
+
+
+		<div class="content__restaurant_bs">
+
+			<div class="amonag__content">
+				<div class="inside__content">
+
+					<h3>Заголовок статьи</h3>
+					<p class="justify__t">Подробный текст описания курса. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст
+						описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов.
+						Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по
+						рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+						маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в
+						ресторанном бизнесе. Общий текст описания курсов.
+						А внизу текста фото галерея курсов, дипломов, лицензий и пр.</p>
+					<div class="gallery__block">
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-1.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-2.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/300-200-3.jpg" alt=""></a>
+					</div>
+					<p class="justify__t">Подробный текст описания курса. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст
+						описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов.
+						Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по
+						рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и
+						маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в
+						ресторанном бизнесе.Общий текст описания курсов.
+						А внизу текста фото галерея курсов, дипломов, лицензий и пр.</p>
+					<div class="gallery__block">
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/210-140-1.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/210-140-2.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/210-140-3.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/210-140-4.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/210-140-5.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/210-140-6.jpg" alt=""></a>
+					</div>
+					<p class="justify__t">Подробный текст описания курса. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст
+						описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов.
+						Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по
+						рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и
+						маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в
+						ресторанном бизнесе.Общий текст описания курсов.
+						А внизу текста фото галерея курсов, дипломов, лицензий и пр.</p>
+					<div class="gallery__block">
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-1.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-2.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-3.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-4.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-5.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-6.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-7.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-8.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-9.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-10.jpg" alt=""></a>
+						<a class="fancybox" href="img/image-big.jpg" data-fancybox-group="gallery" title="Game of thrones"><img src="img/150-100-11.jpg" alt=""></a>
+					</div>
+					<p class="justify__t">Подробный текст описания курса. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Подробный
+						текст описания курса. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания
+						курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс
+						обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по
+						рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и
+						маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в
+						ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном
+						бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий
+						текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания
+						курсов.</p>
+
+					<div class="center__href"><a href="#">Вернуться в Мои ресурсы</a></div>
+				</div><!-- .inside__content -->
+
+			</div>
+
+
+		</div>
+
+
+
 		<div class="header__navigation phone-hidden text-center">
 			<div class="page-nav-wrap"><a href="" class="nav-next"></a>
 				<input type="text" value="111"><span>1800</span><a href="" class="nav-prev"></a>
@@ -301,6 +1087,20 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 	<script src="js/common.js"></script>
+	<script>
+		$('.content__box').each(function() {
+			$(this).find('.tab__box').eq($(this).parents('.content__tb').find('.active').index());
+		});
+		$(".content__tb .tab__tb").click(function() {
+			var thisIndex = $(this).index();
+			$(this).parents('.content__tb').find('.tab__tb').removeClass('active');
+			$(this).addClass('active');
+			$(this).parents('.content__tb').find('.content__box').find('.tab__box').hide();
+			$(this).parents('.content__tb').find('.content__box').find('.tab__box').eq(thisIndex).show();
+		});
+		$('.fancybox').fancybox();
+	</script>
 </body>
 </html>

@@ -39,9 +39,6 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-	.jQtooltip div {
-		display: none !important;
-	}
 	.specialist__block .sp_bl {
 		margin-bottom: 10px;
 	}
@@ -140,6 +137,9 @@
 	}
 	.nav__btn li .sidebar__nav {
 		width: 180px;
+	}
+	.left__sidebar_box {
+		max-width: 260px;
 	}
 
 }

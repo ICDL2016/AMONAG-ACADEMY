@@ -308,13 +308,18 @@ $(document).ready(function(){
 	}).eq(0).addClass("active");
 
 
+
+
+
 	$( ".lang__show" ).click(function() {
-		$( '.left__lang_block' ).toggleClass( "active" );
+		$( '.left__sidebar_box' ).toggleClass( "active" );
+		$('.close__window').css('display','block');
 	});
 
-
-
-
+	$( ".close__window" ).click(function() {
+		$( '.left__sidebar_box' ).removeClass( "active" );
+		$('.close__window').css('display','none');
+	});
 
 }); // end script
 
