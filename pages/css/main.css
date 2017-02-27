@@ -1473,12 +1473,14 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	color: rgba(223,82,43,1);
 }
 .book__page span {
-	display: inline-block;
-	text-indent: 25px;
+	display: block;
 	font-size: 20px;
 	cursor: pointer;
 	transition: 0.3s;
-	line-height: 1.1;
+	line-height: 1.3;
+}
+.spacing__fancy {
+	padding: 15px 0;
 }
 .book__page span:hover {
 	text-decoration: underline;
@@ -2114,6 +2116,11 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	color: #fff;
+}
+.settings__span.rel:hover {
+	background: #808080;
+	color: #fff;
 }
 .book-nav__list {
 	padding-left: 0;
@@ -2212,6 +2219,15 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .inside__sidebar_box .tab__tb.active {
 	background: #333333;
 }
+.inside__sidebar_box .tab__tb:hover {
+	background: #333333;
+}
+.setting__block {
+	background: #808080;
+	position: relative;
+	z-index: 99;
+	display: none;
+}
 .sidebar__links h3 {
 	font-weight: bold;
 	color: #000;
@@ -2245,19 +2261,26 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .settings__span {
 	display: block;
 	padding: 10px;
-}
-.inside__sidebar_box .content__box {
-	background: #808080;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 9;
+	color: #c0c0c0;
+	cursor: pointer;
 }
 .inside__sidebar_box .tbs__tb_block {
-	padding: 40px 10px 10px;
+	padding: 50px 10px 10px;
 }
+
 .inside__sidebar_box .content__box .settings__span {
 	color: #fff;
 	padding: 0 0 10px
 }
 .inside__sidebar_box .content__box  .settings__span i {
 	background: #c0c0c0;
+}
+.settings__span i:hover {
+	background: #fff;
+	color: #3e3e3e;
 }
 .select__block {
 	padding-left: 20px;
@@ -2300,15 +2323,58 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	box-sizing: border-box;
 	padding: 1px 0 0 4px;
 }
+.quest__i i:hover {
+	color: #c0c0c0;
+	background: #fff;
+}
 .set__tab_content {
 	overflow: hidden;
-	padding: 0 0 15px;
+	padding: 0 0 5px;
 }
 .set__tab_content span {
 	float: left;
 	color: #fff;
 	font-size: 18px;
 	padding: 5px 0 0;
+	cursor: pointer;
+}
+.hint {
+	position: relative;
+}
+.hint span {
+	position: absolute;
+	right: -215px;
+	top: 0;
+	color: #333;
+	font-size: 14px;
+	line-height: 1.2;
+	width: 200px;
+	background: #fff;
+	padding: 5px;
+	display: none;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.35);
+}
+.hint span .close {
+	display: inline-block;
+	float: right;
+	color: #fff;
+	margin: 0 0 5px 5px;
+	background: #333;
+	width: 17px;
+	height: 17px;
+	border-radius: 50px;
+	font-family: arial;
+	box-sizing: border-box;
+	padding: 0px 0 0 5px;
+}
+.quest__i .hint span {
+	right: 0;
+	top: 115%;
+	width: 220px;
+	z-index: 999;
 }
 .set__tab_content a {
 	float: right;
@@ -2324,7 +2390,6 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .content__tb {
 	position: relative;
-	z-index: 99;
 }
 .left__sidebar_box.active {
 	left: 0;
@@ -2335,4 +2400,145 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	width: 100%;
 	z-index: 9;
 	display: none;
+}
+.text__content .jQtooltip div {
+	width: 100% !important;
+	height: auto !important;
+	text-align: center !important;
+	box-sizing: border-box;
+	white-space: inherit;
+	background: #808080;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.58);
+	-moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.58);
+	box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.58);
+}
+.audio__playback {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999;
+	background: #e6e6e6;
+	display: none;
+}
+.audio_b {
+	font-size: 35px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: #a2a2a2;
+	position: absolute;
+	line-height: 1;
+}
+.audio_b:hover {
+	color: #7f7f7f;
+}
+.hint span.leng__hint {
+	right: -160px;
+	width: 145px;
+	z-index: 999;
+}
+.audio__playback_inside {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.audio__playback_inside .setting__button {
+	top: 15px;
+	left: 15px;
+	z-index: 999;
+}
+.audio__playback_inside .times__btn {
+	top: 15px;
+	right: 15px;
+}
+.audio__playback_inside .prev__btn {
+	bottom: 15px;
+	left: 15px;
+}
+.audio__playback_inside .next__btn {
+	bottom: 15px;
+	right: 15px;
+}
+.audio__playback_inside .play__btn {
+	bottom: 15px;
+	left: 50%;
+	margin-left: -20px;
+}
+.audio__playback_inside .volume__btn {
+	top: 15px;
+	left: 50%;
+	margin-left: -20px;
+}
+.text__audio {
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 35%;
+}
+.text__audio h1 {
+	color: #000;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1.1;
+	margin-bottom: 10px;
+}
+.text__audio h3 {
+	color: #33333d;
+	font-size: 25px;
+	line-height: 1.1;
+	margin-bottom: 10px;
+}
+.text__audio p {
+	color: #666666;
+	font-size: 16px;
+	line-height: 1.1;
+}
+.set__box {
+	position: relative;
+	margin: 5px;
+	width: 295px;
+	z-index: 99;
+	background: rgba(82,82,82,0.8);
+	padding: 10px 0 20px 50px;
+	display: none;
+}
+.clear {
+	clear: both;
+}
+.set__box h3 {
+	padding: 10px 0 15px 20px;
+	color: #fff;
+	font-size: 20px;
+}
+.apply__buttun {
+	color: #fff;
+	display: block;
+	width: 100px;
+	margin: 10px 0 0 20px;
+	font-size: 18px;
+	background: #e34c21;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 0;
+}
+.set__box .close__bt {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff;
+	font-size: 25px;
+}
+.set__box .select-wrap {
+	width: 220px;
+}
+.set__box .select-wrap select {
+	width: 220px;
 }

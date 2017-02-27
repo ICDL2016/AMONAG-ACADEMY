@@ -321,6 +321,19 @@ $(document).ready(function(){
 		$('.close__window').css('display','none');
 	});
 
+	$('.hint').click(function () {
+		$(this).children('span').fadeToggle(400);
+	});
+
+
+	$('.audio__playback_inside .setting__button, .set__box .close__bt').click(function () {
+		$('.set__box').fadeToggle(400);
+	});
+
+	$('.open__audio,.audio__playback_inside .times__btn').click(function () {
+		$('.audio__playback').fadeToggle(400);
+	});
+
 }); // end script
 
 

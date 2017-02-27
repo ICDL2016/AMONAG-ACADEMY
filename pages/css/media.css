@@ -70,6 +70,20 @@
 	.site .content .marketing__research__block .courses .courses__left {
 		height: auto !important;
 	}
+	.text__audio {
+		top: 60px;
+		height: 440px;
+		overflow: auto;
+	}
+	.text__audio h1 {
+		font-size: 24px;
+	}
+	.text__audio h3 {
+		font-size: 18px;
+	}
+	.text__audio p {
+		font-size: 15px;
+	}
 }
 
 @media only screen and (max-width : 640px) {
@@ -97,6 +111,10 @@
 	.form__contact_block label textarea {
 		width: 100%;
 	}
+	.hint span {
+		right: -160px;
+		width: 145px;
+	}
 	
 }
 @media only screen and (max-width : 580px) {
@@ -114,7 +132,28 @@
 		position: relative;
 		z-index: 9;
 	}
-
+	.hint span.leng__hint {
+		right: -125px;
+		width: 110px;
+		z-index: 999;
+	}
+	.set__box {
+		padding-left: 25px;
+		margin: 0;
+	}
+	.set__box .close__bt {
+		top: 10px;
+		right: 20px;
+	}
+	.quest__i {
+		right: -25px;
+	}
+	.audio_b {
+		font-size: 25px;
+	}
+	.text__audio {
+		top: 40px;
+	}
 }
 @media only screen and (max-width : 540px) {
 	.content__restaurant_bs .restaurant__sidebar {
