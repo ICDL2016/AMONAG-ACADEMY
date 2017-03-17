@@ -71,7 +71,31 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
-
+h1,h2,h3,h4,h5,h6 {
+	text-align: center;
+	color: #ff420e;
+	font-weight: bold;
+	line-height: 1;
+	margin: 10px 0 20px;
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 12px;
+}
 html.js .loader {
 	background: none repeat scroll 0 0 #ffffff;
 	bottom: 0;
@@ -108,6 +132,12 @@ body {
 	margin: 0;
 	background: #808080;
 	line-height: 1;
+}
+strong, b {
+	font-weight: bold;
+}
+i {
+	font-style: italic;
 }
 .site {
 	height: 100% !important;
