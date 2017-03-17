@@ -100,11 +100,11 @@ a {
 a:hover {
 	text-decoration: none;
 }
-ul,
-ol {
+.content ul,
+.content ol {
 	margin: 10px 0 10px 20px;
 }
-li {
+.content li {
 	margin-bottom: 3px;
 }
 html.js .loader {
