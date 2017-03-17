@@ -24,9 +24,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -102,6 +99,13 @@ a {
 }
 a:hover {
 	text-decoration: none;
+}
+ul,
+ol {
+	margin: 10px 0 10px 20px;
+}
+li {
+	margin-bottom: 3px;
 }
 html.js .loader {
 	background: none repeat scroll 0 0 #ffffff;
@@ -213,6 +217,7 @@ img {
 }
 .nav__btn {
 	float: right;
+	list-style: none;
 }
 .nav__btn>li {
 	float: left;
@@ -408,6 +413,7 @@ img {
 	padding-top: 40px;
 	display: inline-block;
 	float: right;
+	list-style: none;
 }
 .sidebar__nav a {
 	text-align: left;
