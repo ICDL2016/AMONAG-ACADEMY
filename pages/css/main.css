@@ -96,6 +96,13 @@ h5 {
 h6 {
 	font-size: 12px;
 }
+a {
+	text-decoration: underline;
+	color: #ff420e;
+}
+a:hover {
+	text-decoration: none;
+}
 html.js .loader {
 	background: none repeat scroll 0 0 #ffffff;
 	bottom: 0;
@@ -645,13 +652,6 @@ p {
 }
 .more__articles a:hover {
 	color: rgba(223,82,43,1)
-}
-h4 {
-	font-weight: bold;
-	color: #666;
-	font-size: 18px;
-	line-height: 1;
-	margin-bottom: 5px;
 }
 .list__menu li {
 	font-size: 14px;
