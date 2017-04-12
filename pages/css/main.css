@@ -468,6 +468,7 @@ img {
 }
 .nav__btn li .lang__list li {
 	margin-top: 2px;
+	list-style: none;
 }
 .nav__btn li .lang__list li a:hover {
 	background-color: #fa4716;
