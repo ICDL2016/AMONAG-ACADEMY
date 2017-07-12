@@ -556,6 +556,7 @@ img {
     display: inline-block;
 }
 .subscription__content .lang__span .lang__audio {
+	min-width: 24px;
 	background: url(../img/lang-audio.png) center no-repeat;
 }
 .subscription__content .data__time {
