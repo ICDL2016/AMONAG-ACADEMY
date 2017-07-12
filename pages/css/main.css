@@ -551,8 +551,8 @@ img {
 	font-size: 12px;
 }
 .subscription__content .lang__span span {
-	padding: 5px 7px;
-    margin: 2px;
+	padding: 5px 6px;
+    margin: 1px;
     display: inline-block;
 }
 .subscription__content .lang__span .lang__audio {
