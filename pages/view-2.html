@@ -671,6 +671,9 @@ pequeño,pero nunca lo habían visto.</span>
 		function bookWidth () {
 			var $tableWidth = $('.outside__book_blocks').width();
 			console.log($tableWidth);
+			if($tableWidth < $(window).width()) {
+				$tableWidth = $(window).width() - 22;
+			};
 			$('.container_book-out').css('width', $tableWidth + 22);
 		};
 		$(window).resize(bookWidth);
