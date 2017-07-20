@@ -665,6 +665,18 @@ pequeño,pero nunca lo habían visto.</span>
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/common.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function($) {
+		function bookWidth () {
+			var $tableWidth = $('.outside__book_blocks').width();
+			console.log($tableWidth);
+			$('.container_book-out').css('width', $tableWidth + 20);
+		};
+		$(window).resize(bookWidth);
+		$(window).load(bookWidth);
+	});
+</script>
 <script>
 	$('.content__box').each(function() {
 		$(this).find('.tab__box').eq($(this).parents('.content__tb').find('.active').index()).css('display', 'block');
