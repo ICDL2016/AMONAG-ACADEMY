@@ -104,12 +104,24 @@ $(document).ready(function () {
 
    $('#start-learning-btn').click(function(event) {
    		event.preventDefault();
-    	$('#start-learning').toggleClass('show');
+    	if($('#start-learning').hasClass('show')) {
+    		$('#start-learning').toggleClass('show');
+    		$("#start-learning").fadeOut();
+    	} else {
+    		$('#start-learning').toggleClass('show');
+    		$('#start-learning').fadeIn();
+    	};
    });
 
    $('#certificate-form-btn').click(function(event) {
    		event.preventDefault();
-    	$('#certificate_form').toggleClass('show');
+    	if($('#certificate-div').hasClass('show')) {
+    		$('#certificate-div').toggleClass('show');
+    		$("#certificate-div").fadeOut();
+    	} else {
+    		$('#certificate-div').toggleClass('show');
+    		$("#certificate-div").fadeIn();
+    	};
    });
 
 

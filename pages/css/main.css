@@ -2591,8 +2591,12 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	display: none;
 }
 
-#certificate_form {
+#certificate-div {
 	display: none;
+}
+
+#certificate-form {
+	width: 250px;
 }
 
 .quest__btn.long {
@@ -2601,6 +2605,6 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 #start-learning.show,
-#certificate_form.show {
-	display: block;
+#certificate-div.show {
+
 }
