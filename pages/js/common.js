@@ -36,7 +36,7 @@ $(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-	
+
 });
 
 $(window).load(function() {
@@ -99,7 +99,20 @@ $(document).ready(function () {
 
 
 
-	
+
+	// Personal-area-new events
+
+   $('#start-learning-btn').click(function(event) {
+   		event.preventDefault();
+    	$('#start-learning').toggleClass('show');
+   });
+
+   $('#certificate-form-btn').click(function(event) {
+   		event.preventDefault();
+    	$('#certificate_form').toggleClass('show');
+   });
+
+
 });
 
 

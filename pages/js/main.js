@@ -280,7 +280,7 @@ $(document).ready(function () {
     }
   });
 
- 
+
 
   $(document).on('change', '.languages-nav select', function(){
     $('.languages-nav button').addClass('active');
@@ -389,6 +389,7 @@ $(document).ready(function () {
        $('.waveform').fadeIn();
      }
    });
+
 });
 
 $('#waveform').on('change', function() {

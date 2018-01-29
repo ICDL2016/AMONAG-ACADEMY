@@ -2584,3 +2584,23 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .set__box .select-wrap select {
 	width: 220px;
 }
+
+/*Personal-area-new*/
+
+#start-learning {
+	display: none;
+}
+
+#certificate_form {
+	display: none;
+}
+
+.quest__btn.long {
+	width: 400px;
+	padding: 12px 40px 10px;
+}
+
+#start-learning.show,
+#certificate_form.show {
+	display: block;
+}
