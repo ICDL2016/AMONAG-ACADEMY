@@ -126,6 +126,43 @@ $(document).ready(function () {
     	$(this).addClass('hidden');
    });
 
+	$('#certificate-form-btn').click(function(event) {
+   		event.preventDefault();
+   		var certName = $('#certificate-name').val();
+   		var certLastName = $('#certificate-lastname').val();
+   		var certSecName = $('#certificate-secondname').val();
+   		var certNameLat = $('#certificate-name-lat').val();
+   		var certLastNameLat = $('#certificate-lastname-lat').val();
+   		if (!certName || !certLastName || !certNameLat || !certLastNameLat) {
+   			$('#certificate-form .error-box').removeClass('hidden');
+   		} else {
+   			$('#certificate-form .error-box').addClass('hidden');
+   			$('#certificate-complete-div').fadeIn();
+    		$('#start-learning-btn').addClass('hidden');
+    		$(this).parent().toggleClass('hidden');
+   		};
+   });
+
+   $('#certificate-edit-btn').click(function(event) {
+   		event.preventDefault();
+    	$('#certificate-complete-form').toggleClass('hidden');
+    	$(this).parent().toggleClass('hidden');
+   });
+
+   $('.certificate-order-link').click(function(event) {
+   		event.preventDefault();
+    	$('#modal-certificate-order').toggleClass('hidden');
+   });
+
+   $('.certificate-complete-link').click(function(event) {
+   		event.preventDefault();
+    	$('#modal-certificate-complete').toggleClass('hidden');
+   });
+
+   $('.close__bt').click(function(event) {
+   		event.preventDefault();
+    	$(this).parent('div').parent('div').toggleClass('hidden');
+   });
 
 });
 

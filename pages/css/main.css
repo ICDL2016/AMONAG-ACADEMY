@@ -2587,16 +2587,19 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 /*Personal-area-new*/
 
-#start-learning {
+#start-learning,
+#certificate-div,
+#certificate-complete-div {
 	display: none;
 }
 
-#certificate-div {
-	display: none;
-}
-
-#certificate-form {
+#certificate-form,
+#certificate-complete-form {
 	width: 280px;
+}
+
+#certificate-complete-form.hidden {
+	display: none;
 }
 
 .quest__btn.long {
@@ -2605,12 +2608,58 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 #start-learning-btn.hidden,
-#certificate-div-btn.hidden {
+#certificate-div-btn.hidden,
+.certificate-complete-name.hidden,
+.modal-certificate-window.hidden {
 	display: none;
+}
+
+.modal-certificate-window {
+	display: block;
 }
 
 .consult.bottom-zero {
 	padding-bottom: 0;
+}
+
+.certificate-complete-name {
+	margin: 20px 0;
+}
+
+.certificate-complete-name span {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.certificate-complete-link,
+.certificate-order-link, {
+	display: inline-block;
+	margin-bottom: 10px;
+    color: #666666;
+}
+
+.certificate-complete-link:hover,
+.certificate-complete-link:visited,
+.certificate-complete-link:focus,
+.certificate-order-link:hover,
+.certificate-order-link:visited,
+.certificate-order-link:focus {
+    color: #666666;
+}
+
+.certificate-complete-link::before {
+	content: url(../img/diploma.png);
+	position: relative;
+	top: 10px;
+	padding-right: 5px;
+}
+
+.last-p {
+	text-align: center;
+	max-width: 1000px;
+	margin: 10px auto 20px;
 }
 
 /*Modal window*/
@@ -2630,6 +2679,20 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
     padding: 25px;
     display: none;
     overflow: auto;
+}
+
+.modal-certificate-window .box__comment {
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    max-height: 80vh;
+    max-width: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#modal-certificate-order .box__comment {
+	transform: translate(-500px,-50%);
+	max-width: 500px;
 }
 
 .box__comment h3 {
@@ -2668,10 +2731,49 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
     padding: 5px 0;
 }
 
+.modal-actions-btns {
+	text-align: center;
+}
+
+.modal-action-btn {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	color: #fff;
+	background-color: #ff420e;
+	padding: 10px;
+	margin: 10px 20px;
+	text-decoration: none;
+}
+
 .box__comment .close__bt {
     position: absolute;
     top: 5px;
     right: 5px;
     color: #fff;
     font-size: 25px;
+}
+
+.modal-order-form {
+	width: 100%;
+}
+
+.modal-order-form input,
+.modal-order-form label {
+	display: block;
+	width: 100%;
+}
+
+.modal-order-form input {
+	margin-bottom: 10px;
+}
+
+.modal-order-form input[name="name"],
+.modal-order-form input[name="name-lat"] {
+	text-transform: uppercase;
+}
+
+.modal-order-form label {
+	color: #fff;
+	margin-bottom: 5px;
 }
