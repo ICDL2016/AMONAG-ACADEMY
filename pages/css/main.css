@@ -2612,3 +2612,66 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .consult.bottom-zero {
 	padding-bottom: 0;
 }
+
+/*Modal window*/
+
+.box__comment {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* width: 295px; */
+    max-height: 400px;
+    max-width: 500px;
+    z-index: 1001;
+    background: rgba(82,82,82,0.8);
+    padding: 25px;
+    display: none;
+    overflow: auto;
+}
+
+.box__comment h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.box__comment p {
+    color: #fff;
+}
+
+.box__comment .slide_text {
+    color: #fff;
+    font-size: 13px;
+}
+
+.box__comment textarea {
+    resize: none;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.box__comment .apply__buttun {
+    margin: 0;
+}
+
+.apply__buttun {
+    color: #fff;
+    display: block;
+    width: 100px;
+    margin: 10px 0 0 5px;
+    font-size: 18px;
+    background: #e34c21;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.box__comment .close__bt {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    font-size: 25px;
+}

@@ -272,7 +272,7 @@
 
 			<div id="certificate-div">
 				<p class="justify__t">
-					После успешной сдачи тестов Вы сможете получить оригинал документа об образовании по почте и распечатать электронную копию прямо на сайте. Посмотрите, как он будет выглядеть:
+					После успешной сдачи тестов Вы сможете получить оригинал документа об образовании по почте и, при желании, распечатать электронную копию. Добавьте недостающие данные, которые мы укажем в Вашем документе об образовании:
 				</p>
 				<div class="contact__form" id="certificate-form">
 			        <form method="post" name="form1" id="cert1" action="" enctype="multipart/form-data">
@@ -284,6 +284,7 @@
 
 			            <input id="name" type="text" name="NAME" value="" placeholder="Имя">
 			            <div class="error-box top__min"></div>
+			            <div class="error-box top__min" style="color: red; padding-left: 5px;">• поле "Имя" обязательно для заполнения</div>
 			            <input type="text" name="LAST_NAME" value="" placeholder="Фамилия">
 			            <input type="text" name="SECOND_NAME" value="" placeholder="Отчество">
 			            <input type="text" name="NAME_LATIN" value="" placeholder="Имя на латинице">
@@ -454,28 +455,26 @@
 		</div><!-- .personal__inside -->
 
 
-
-
-
-
-
 	</div>
-
-
-
-
-
 
 </div>
 
 
-
-
-
-
-
-
-<div class="hidden"></div>
+<div class="hidden">
+	<div class="box__comment" style="display: block; max-height: 384px;">
+        <h3>Комментарий</h3>
+        <p>Вы можете сообщить об ошибке/оставить предложение об улучшении перевода</p>
+        <div class="slide_text">
+        	The ability to read a person's attitudes and thoughts by their behavior was the original communication system used by humans before spoken language evolved.<br>La habilidad de leer la actitud y los pensamientos de los demás a partir de su comportamiento fue el sistema de comunicación original utilizado por el ser humano antes de que el lenguaje hablado evolucionara.
+        	<br>Способность понимать отношения между людьми и их мысли по поведению – это древняя система общения, и люди использовали ее задолго до появления устной речи.<br>
+        </div>
+        <div class="error_text"></div>
+        <textarea placeholder="Сообщите все, что считаете нужным" rows="4" name="comment"></textarea>
+        <a class="apply__buttun send_comment" href="">Отправить</a>
+        <div class="clear"></div>
+        <button class="audio_b close__bt"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+</div>
 
 <div class="loader">
 	<div class="loader_inner"></div>
