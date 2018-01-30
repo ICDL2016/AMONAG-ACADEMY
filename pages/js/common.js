@@ -112,7 +112,6 @@ $(document).ready(function () {
     		$('#start-learning').fadeIn();
     	};
     	$(this).addClass('hidden');
-    	$('#certificate-div-btn').addClass('hidden');
    });
 
    $('#certificate-div-btn').click(function(event) {
@@ -125,7 +124,6 @@ $(document).ready(function () {
     		$("#certificate-div").fadeIn();
     	};
     	$(this).addClass('hidden');
-    	$('#start-learning-btn').addClass('hidden');
    });
 
 
