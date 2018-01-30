@@ -111,9 +111,11 @@ $(document).ready(function () {
     		$('#start-learning').toggleClass('show');
     		$('#start-learning').fadeIn();
     	};
+    	$(this).addClass('hidden');
+    	$('#certificate-div-btn').addClass('hidden');
    });
 
-   $('#certificate-form-btn').click(function(event) {
+   $('#certificate-div-btn').click(function(event) {
    		event.preventDefault();
     	if($('#certificate-div').hasClass('show')) {
     		$('#certificate-div').toggleClass('show');
@@ -122,6 +124,8 @@ $(document).ready(function () {
     		$('#certificate-div').toggleClass('show');
     		$("#certificate-div").fadeIn();
     	};
+    	$(this).addClass('hidden');
+    	$('#start-learning-btn').addClass('hidden');
    });
 
 

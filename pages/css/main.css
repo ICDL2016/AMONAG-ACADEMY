@@ -2600,11 +2600,15 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 .quest__btn.long {
-	width: 400px;
-	padding: 12px 40px 10px;
+	width: 240px;
+	padding: 12px 20px 10px;
 }
 
-#start-learning.show,
-#certificate-div.show {
+#start-learning-btn.hidden,
+#certificate-div-btn.hidden {
+	display: none;
+}
 
+.consult.bottom-zero {
+	padding-bottom: 0;
 }
