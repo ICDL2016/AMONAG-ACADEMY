@@ -2697,6 +2697,11 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 #modal-certificate-order .box__comment {
 	max-width: 500px;
 	max-height: 480px;
+	z-index: 1005;
+}
+
+#modal-certificate-order h4 {
+	color: #fff;
 }
 
 #modal-certificate-complete img {
@@ -2738,8 +2743,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 .modal-order-form input,
 .modal-order-form label,
-.modal-order-form select,
-.modal-order-form option {
+.modal-order-form select {
 	display: block;
 	width: 100%;
 }
@@ -2767,7 +2771,18 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
     box-sizing: border-box;
 }
 
-.modal-order-form option span {
-	display: block;
-	width: 100%;
+.modal-order-form option {
+	width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.modal-action-btn {
+		width: 150px;
+	}
+
+	.modal-certificate-window .box__comment {
+		max-width: 700px;
+		max-height: 500px;
+	}
 }
