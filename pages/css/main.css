@@ -2787,3 +2787,11 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 		max-height: 500px;
 	}
 }
+
+@media screen and (max-width: 700px) {
+
+	.content__restaurant_bs {
+    	background-color: #fff;
+	}
+
+}
