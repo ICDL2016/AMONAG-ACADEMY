@@ -154,6 +154,11 @@ $(document).ready(function () {
     	$('#modal-certificate-order').toggleClass('hidden');
    });
 
+   $('#modal-order-btn').click(function(event) {
+   		event.preventDefault();
+    	$('#modal-certificate-order').toggleClass('hidden');
+   });
+
    $('.certificate-complete-link').click(function(event) {
    		event.preventDefault();
    		if ($(this).hasClass('in-progress')) {
