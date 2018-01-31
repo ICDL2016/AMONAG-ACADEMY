@@ -167,6 +167,10 @@ $(document).ready(function () {
    			$('#modal-certificate-complete img').css('margin-top','0').attr('src', 'img/diplom2.png');;
    		}
     	$('#modal-certificate-complete').toggleClass('hidden');
+    	$('.close__bt').click(function(event) {
+   			event.preventDefault();
+    		$(this).parent('div').parent('div').toggleClass('hidden');
+   		});
    });
 
    $('#modal-send-btn').click(function(event) {
@@ -184,6 +188,16 @@ $(document).ready(function () {
    $('.close__bt').click(function(event) {
    		event.preventDefault();
     	$(this).parent('div').parent('div').toggleClass('hidden');
+   });
+
+   $( "#modal-certificate-order select" ).change(function() {
+ 		if ($(this).val() == "post") {
+ 			$('#modal-address-div').removeClass('hidden');
+ 		} else {
+ 			if (!$('#modal-address-div').hasClass('hidden')) {
+ 				$('#modal-address-div').addClass('hidden');
+ 			};
+ 		};
    });
 
 });

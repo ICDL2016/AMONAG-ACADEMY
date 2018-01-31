@@ -2743,6 +2743,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 .modal-order-form input,
+.modal-order-form textarea,
 .modal-order-form label,
 .modal-order-form select {
 	display: block;
@@ -2750,7 +2751,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 .modal-order-form input,
-.modal-order-form select {
+.modal-order-form select,
+.modal-order-form textarea {
 	margin-bottom: 10px;
 }
 
@@ -2765,11 +2767,17 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 .modal-order-form select,
+.modal-order-form textarea,
 .modal-order-form option {
     padding: 6px 10px 4px;
     border: 2px solid rgba(223,82,43,1);
     font-size: 14px;
     box-sizing: border-box;
+}
+
+.modal-order-form textarea {
+	height: 80px;
+	overflow: auto;
 }
 
 #modal-send-btn {
