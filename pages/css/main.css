@@ -2685,8 +2685,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	position: fixed;
 	left: 0;
 	top: 0;
-	max-width: 60vw;
-	max-height: 80vh;
+	max-width: 1000px;
+	max-height: 700px;
     /*left: 50%;
     top: 50%;
     max-height: 80vh;
@@ -2707,6 +2707,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 .modal-actions-btns {
 	text-align: center;
+}
+
+.modal-actions-btns.hidden {
+	display: none;
 }
 
 .modal-action-btn {

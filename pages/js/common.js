@@ -156,6 +156,13 @@ $(document).ready(function () {
 
    $('.certificate-complete-link').click(function(event) {
    		event.preventDefault();
+   		if ($(this).hasClass('in-progress')) {
+   			$('#modal-certificate-complete .modal-actions-btns').addClass('hidden');
+   			$('#modal-certificate-complete img').css('margin-top','50px').attr('src', 'img/diplom1.png');;
+   		} else {
+   			$('#modal-certificate-complete .modal-actions-btns').removeClass('hidden');
+   			$('#modal-certificate-complete img').css('margin-top','0').attr('src', 'img/diplom2.png');;
+   		}
     	$('#modal-certificate-complete').toggleClass('hidden');
    });
 
