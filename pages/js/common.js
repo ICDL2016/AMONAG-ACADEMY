@@ -139,6 +139,7 @@ $(document).ready(function () {
    			$('#certificate-form .error-box').addClass('hidden');
    			$('#certificate-complete-div').fadeIn();
     		$('#start-learning-btn').addClass('hidden');
+    		$('#certificate-div-p').toggleClass('hidden');
     		$(this).parent().toggleClass('hidden');
    		};
    });

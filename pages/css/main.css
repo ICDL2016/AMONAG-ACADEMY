@@ -2609,6 +2609,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 #start-learning-btn.hidden,
 #certificate-div-btn.hidden,
+#certificate-div-p.hidden,
 .certificate-complete-name.hidden,
 .modal-certificate-window.hidden {
 	display: none;
