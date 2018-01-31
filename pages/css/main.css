@@ -2641,6 +2641,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	display: inline-block;
 	margin-bottom: 10px;
     color: #666666;
+    line-height: 30px;
 }
 
 .certificate-complete-link:hover,
@@ -2722,11 +2723,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .modal-action-btn {
 	display: inline-block;
 	text-align: center;
-	width: 200px;
+	margin: -10px 30px 20px;
 	color: #fff;
-	background-color: #ff420e;
-	padding: 10px;
-	margin: 10px 20px;
+	font-size: 30px;
 	text-decoration: none;
 }
 
@@ -2777,10 +2776,6 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 @media screen and (max-width: 1200px) {
-
-	.modal-action-btn {
-		width: 150px;
-	}
 
 	.modal-certificate-window .box__comment {
 		max-width: 700px;
