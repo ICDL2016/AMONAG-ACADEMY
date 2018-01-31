@@ -2737,12 +2737,15 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 .modal-order-form input,
-.modal-order-form label {
+.modal-order-form label,
+.modal-order-form select,
+.modal-order-form option {
 	display: block;
 	width: 100%;
 }
 
-.modal-order-form input {
+.modal-order-form input,
+.modal-order-form select {
 	margin-bottom: 10px;
 }
 
@@ -2754,4 +2757,17 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .modal-order-form label {
 	color: #fff;
 	margin-bottom: 5px;
+}
+
+.modal-order-form select,
+.modal-order-form option {
+    padding: 6px 10px 4px;
+    border: 2px solid rgba(223,82,43,1);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.modal-order-form option span {
+	display: block;
+	width: 100%;
 }

@@ -533,7 +533,12 @@
         	<label for="email">Email / Email: *</label>
         	<input type="email" name="email" value="ivan-ivan@mail.ru" placeholder="Email">
         	<label for="method">Каким способом Вы планируете получить Ваш документ? / How would you like to receive your document?: *</label>
-        	<input type="text" name="method" value="Не выбрано" placeholder="Способ получения документа">
+        	<!--input type="text" name="method" value="Не выбрано" placeholder="Способ получения документа"-->
+        	<select name="method">
+        		<option value="not-selected" selected>Не выбрано</option>
+        		<option value="post">Почтой России / Russian post</option>
+        		<option value="take">В учебном центре по адресу: г. Москва, м. ВДНХ, пр-т Мира, 150/ In the training center (Russia, Moscow, Prospect Mira str., 150)</option>
+        	</select>
         </form>
         <a class="quest__btn" href="">Отправить / Send</a>
         <div class="clear"></div>
