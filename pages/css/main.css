@@ -2634,19 +2634,19 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 
 .certificate-complete-link,
-.certificate-order-link, {
+.certificate-order-link,
+.certificate-order-link:visited,
+.certificate-complete-link:visited {
 	display: inline-block;
 	margin-bottom: 10px;
     color: #666666;
 }
 
 .certificate-complete-link:hover,
-.certificate-complete-link:visited,
 .certificate-complete-link:focus,
 .certificate-order-link:hover,
-.certificate-order-link:visited,
 .certificate-order-link:focus {
-    color: #666666;
+    color: #ff420e;
 }
 
 .certificate-complete-link::before {
