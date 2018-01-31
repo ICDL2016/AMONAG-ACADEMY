@@ -2679,7 +2679,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
     z-index: 1001;
     background: rgba(82,82,82,0.8);
     padding: 25px;
-    display: none;
+    display: block;
     overflow: none;
 }
 
@@ -2773,6 +2773,18 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 .modal-order-form option {
 	width: 500px;
+}
+
+.box__comment.hidden {
+	display: none;
+}
+
+#modal-certificate-order #modal-result-box {
+	max-height: 250px;
+}
+
+#modal-result-box p {
+	color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

@@ -152,6 +152,8 @@ $(document).ready(function () {
 
    $('.certificate-order-link').click(function(event) {
    		event.preventDefault();
+   		$('#modal-result-box').addClass('hidden');
+   		$('#modal-certificate-order .box__comment:first-child').removeClass('hidden');
     	$('#modal-certificate-order').toggleClass('hidden');
    });
 
@@ -165,6 +167,18 @@ $(document).ready(function () {
    			$('#modal-certificate-complete img').css('margin-top','0').attr('src', 'img/diplom2.png');;
    		}
     	$('#modal-certificate-complete').toggleClass('hidden');
+   });
+
+   $('#modal-send-btn').click(function(event) {
+   		event.preventDefault();
+   		$(this).parent().addClass('hidden');
+   		$('#modal-result-box').empty();
+   		$('#modal-result-box').prepend('<h4>Ваша анкета отправлена. / Your request has been sent.</h4><p>Ваша анкета отправлена. О готовности документа об обучении Вы можете уточнить по телефону: +7 (926) 214-90-90 (многоканальный) или по электронной почте edu@amonag.com / Your request has been sent. You can also check whether your document is ready by calling +7 (926) 214-90-90 or by sending an e-mail to: edu@amonag.com</p><div class="clear"></div><button class="audio_b close__bt"><i class="fa fa-times" aria-hidden="true"></i></button>');
+   		$('#modal-result-box').removeClass('hidden');
+   		$('.close__bt').click(function(event) {
+   			event.preventDefault();
+    		$(this).parent('div').parent('div').toggleClass('hidden');
+   		});
    });
 
    $('.close__bt').click(function(event) {
