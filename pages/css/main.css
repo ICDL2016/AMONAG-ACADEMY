@@ -2664,6 +2664,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	margin: 10px auto 20px;
 }
 
+.certificate-complete-img.hidden {
+	display: none;
+}
+
 /*Modal window*/
 
 .box__comment {
