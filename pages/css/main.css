@@ -650,6 +650,15 @@ p {
 .social__network a:hover {
 	background: #ff420e;
 }
+
+@media screen and (max-width: 700px) {
+	.social__network a {
+		font-size: 18px;
+		padding: 6px 4px 5px;
+		width: 22px;
+	}
+}
+
 .subscription__content input[type="text"]::-webkit-input-placeholder {color:#b9b7b7;}
 .subscription__content input[type="text"]::-moz-placeholder          {color:#b9b7b7;}
 .subscription__content input[type="text"]:-moz-placeholder           {color:#b9b7b7;}
