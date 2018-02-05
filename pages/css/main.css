@@ -2782,7 +2782,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 .modal-order-form textarea {
 	height: 80px;
-	overflow: auto;
+	overflow-y: scroll;
 }
 
 #modal-send-btn {
