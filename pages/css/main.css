@@ -2698,7 +2698,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	max-height: 480px;
 }
 
-#modal-certificate-order h4 {
+#modal-certificate-order h4,
+#modal-result-box h4 {
 	color: #fff;
 }
 
