@@ -2829,4 +2829,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 		width: 280px;
 	}
 
+	.modal-order-form textarea {
+		height: 90px;
+	}
+
 }
