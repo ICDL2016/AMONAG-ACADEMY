@@ -2673,8 +2673,23 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	margin: 10px auto 20px;
 }
 
-.certificate-complete-img.hidden {
-	display: none;
+.certificate-action-btn {
+	display: inline-block;
+	margin: 10px 20px;
+	color: #666666;
+}
+
+.certificate-action-btn:hover {
+	color: #ff420e;
+}
+
+.certificate-img-div .fa {
+	font-size: 26px;
+	margin-right: 10px;
+}
+
+.certificate-img-div img {
+	width: 100%;
 }
 
 /*Modal window*/
