@@ -2899,8 +2899,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	}
 
 	#modal-send-btn {
-		margin-left: 0;
-		margin-right: 0;
+		margin: auto;
 	}
 
 	.modal-order-form h4 {
