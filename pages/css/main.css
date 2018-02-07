@@ -2872,6 +2872,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 @media screen and (max-width: 700px) {
 
+	.header {
+		overflow: hidden;
+	}
+
 	.content__restaurant_bs {
     	background-color: #fff;
 	}
@@ -2887,6 +2891,23 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 
 	.modal-order-form textarea {
 		height: 90px;
+	}
+
+	.modal-order-form input,
+	textarea {
+		font-size: 14px;
+	}
+
+/*	.modal-order-form textarea::-webkit-input-placeholder {font-size: 14px;}
+	.modal-order-form textarea::-moz-placeholder          {font-size: 14px;}
+	.modal-order-form textarea:-ms-input-placeholder      {font-size: 14px;}
+*/
+	.modal-order-form h4 {
+		font-size: 14px;
+	}
+
+	.modal-order-form label {
+		font-size: 14px;
 	}
 
 }
