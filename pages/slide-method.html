@@ -143,10 +143,13 @@
             player.playVideo();
         });
         
+        var iframeWidth = 650;
+        var iframeHeight = 450;
+        
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('youtube', {
-                width: 600,
-                height: 450,
+                width: iframeWidth,
+                height: iframeHeight,
                 videoId: 'xFa2_PVMeDQ'
             });
         }
