@@ -43,8 +43,8 @@
 	    </div>
 	    <div class="language-block">
             <div class="language-div">
-                <span class="language" title="Сменить язык сайта">Ru</span>
-                <ul class="lang__list hidden">
+                <span id="language" class="language" title="Сменить язык сайта">Ru</span>
+                <ul class="lang__list">
                     <li><a href="#">EN</a></li>
                     <li><a href="#">ES</a></li>
                     <li><a href="#">DE</a></li>
@@ -132,18 +132,14 @@
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 	<script src="https://www.youtube.com/iframe_api"></script>
-	<script src="js/common.js"></script>
+    <script src="js/common.js"></script>
 	<script>
 		$('.fancybox').fancybox();
         
-        $('.language-div').click(function(){
-            $(this).siblings('.lang__list').toggleClass('hidden');
-        });
-        
-        $('.play-div').click(function(){
-            $(this).addClass('hidden');
-            $(this).siblings('.video-bg').addClass('hidden');
-            $(this).siblings('#youtube').removeClass('hidden');
+        $('.play-div img').click(function(){
+            $(this).parent().addClass('hidden');
+            $(this).parent().siblings('.video-bg').addClass('hidden');
+            $(this).parent().siblings('#youtube').removeClass('hidden');
             player.playVideo();
         });
         
