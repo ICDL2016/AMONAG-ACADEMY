@@ -94,7 +94,7 @@ body {
 }
 
 .content {
-    margin-top: -40px;
+    margin-top: -60px;
     border-top: none;
 }
 
@@ -166,14 +166,17 @@ body {
 
 .contact__form form {
     background: #ec220a;
+    background: #ccc;
 }
 
 .contact__form form:hover {
     background: #ec220a;
+    background: #ccc;
 }
 
 .contact__form form input:not([type="submit"]) {
     border-color: #ec220a;
+    border-color: #ccc;
 }
 
 .agree-div {    
@@ -210,6 +213,15 @@ body {
     color: #fff;
     font-size: 10px;
     text-decoration: underline;
+}
+
+#btn-try {
+    background: #ec220a;
+    width: calc(100% + 20px);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -10px;
+    margin-bottom: -10px;
 }
 
 .social__network a:hover {
