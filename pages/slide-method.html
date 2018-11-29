@@ -74,10 +74,9 @@
                 <li>PT</li>
             </ul>
             <div class="video-div">
-                <div class="video-bg">
-                    <img src="img/video-bg.png" alt="">
+                <div class="video-bg"></div>
+                <div id="youtube" class="hidden">
                 </div>
-                <iframe class="hidden" width="600" height="450" src="https://www.youtube.com/embed/xFa2_PVMeDQ" frameborder="0" allowfullscreen></iframe>
                 <div class="play-div">
                     <img src="img/play.png" alt="">
                 </div>
@@ -128,6 +127,7 @@
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/common.js"></script>
 	<script>
 		$('.fancybox').fancybox();
@@ -139,8 +139,17 @@
         $('.play-div').click(function(){
             $(this).addClass('hidden');
             $(this).siblings('.video-bg').addClass('hidden');
-            $(this).siblings('iframe').removeClass('hidden');
+            $(this).siblings('#youtube').removeClass('hidden');
+            player.playVideo();
         });
+        
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube', {
+                width: 600,
+                height: 450,
+                videoId: 'xFa2_PVMeDQ'
+            });
+        }
 	</script>
 </body>
 </html>
