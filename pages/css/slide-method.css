@@ -16,6 +16,10 @@ body {
     padding: 10px;
 }
 
+.logo-div a {
+    display: inline-block;
+}
+
 .logo-div img {
     width: 100%;
 }
@@ -94,7 +98,7 @@ body {
 }
 
 .content {
-    margin-top: -60px;
+    margin-top: -20px;
     border-top: none;
 }
 
@@ -232,14 +236,23 @@ body {
     display: none!important;
 }
 
-@media (max-width: 1023px) {
-    .header-new {
-        flex-direction: column;
+@media (max-width: 767px) {
+    .logo-div {
+        width: 200px;        
+    }
+    .enter-div {
+        margin: 0;    
     }
     .content {
         margin-top: 0px;        
     }
+    .languages-string-div {
+        padding: 0 10px;
+    }
     .play-div {                
         left: 0;        
+    }
+    .video-div {        
+        margin: 20px 0 10px;        
     }
 }

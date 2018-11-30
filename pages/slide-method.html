@@ -68,10 +68,24 @@
             <ul class="languages-string-div">
                 <li>EN</li>
                 <li>ES</li>
+                <li>RU</li>
                 <li>DE</li>
                 <li>FR</li>
                 <li>IT</li>
                 <li>PT</li>
+                <li>JA</li>
+                <li>ZH</li>
+                <li>PL</li>
+                <li>TR</li>
+                <li>AR</li>
+                <li>FA</li>
+                <li>NL</li>
+                <li>KO</li>
+                <li>CS</li>
+                <li>VI</li>
+                <li>ID</li>
+                <li>EL</li>
+                <li>SV</li>
             </ul>
             <div class="video-div">
                 <div class="video-bg"></div>
@@ -144,15 +158,29 @@
         });
         
         var iframeWidth = 650;
-        var iframeHeight = 450;
+        var iframeHeight = 450;        
         
-        function onYouTubeIframeAPIReady() {
+        function windowSize() {
+            if ($(window).width() <= 767) {
+                iframeWidth = $(window).width() - 20;
+                iframeHeight = iframeWidth/2;
+                $('.video-bg').css('width', iframeWidth).css('height',iframeHeight);
+                $('.play-div').css('width', iframeWidth).css('height',iframeHeight);
+                $('.play-div img').css('width', iframeHeight).css('height',iframeHeight);
+            }
+        };
+        
+        function onYouTubeIframeAPIReady(iframeWidth, iframeHeight) {
             player = new YT.Player('youtube', {
                 width: iframeWidth,
                 height: iframeHeight,
                 videoId: 'xFa2_PVMeDQ'
             });
         }
+        
+        // Изменение размеров окна
+        $(window).load(windowSize); // при загрузке
+        $(window).resize(windowSize); // при изменении размеров css('position','relative')
 	</script>
 </body>
 </html>
