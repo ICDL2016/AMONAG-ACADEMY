@@ -105,7 +105,7 @@
                 <div class="error-box"></div>
                 <div id="agree_div" class="agree-div">
                     <span class="agree-sp"><input type="checkbox" id="agree" class="agree" checked=""></span>
-                    <label for="agree" class="agree-lbl">Даю <a href="/agreement/" target="_blank">согласие на обработку персональных данных</a> и соглашаюсь с условиями <a href="/terms/" target="_blank">договора-оферты</a></label>
+                    <label for="agree" class="agree-lbl">Даю <a href="/agreement/" target="_blank">согласие на обработку персональных данных</a></label>
                 </div>
                 <input id="btn-try" type="submit" value="Попробовать бесплатно">                
             </form>            
@@ -157,8 +157,8 @@
             player.playVideo();
         });
         
-        var iframeWidth = 650;
-        var iframeHeight = 450;        
+        var iframeWidth = 640;
+        var iframeHeight = 360;        
         
         function windowSize() {
             if ($(window).width() <= 767) {
@@ -166,15 +166,21 @@
                 iframeHeight = iframeWidth/2;
                 $('.video-bg').css('width', iframeWidth).css('height',iframeHeight);
                 $('.play-div').css('width', iframeWidth).css('height',iframeHeight);
-                $('.play-div img').css('width', iframeHeight).css('height',iframeHeight);
+                $('.play-div img').css('width', iframeHeight/2).css('height',iframeHeight/2);
+            } else {
+                iframeWidth = 640;
+                iframeHeight = 360;
+                $('.video-bg').css('width', iframeWidth).css('height',iframeHeight);
+                $('.play-div').css('width', iframeWidth).css('height',iframeHeight);
+                $('.play-div img').css('width', '120px').css('height','120px');
             }
         };
         
         function onYouTubeIframeAPIReady(iframeWidth, iframeHeight) {
             player = new YT.Player('youtube', {
-                width: iframeWidth,
-                height: iframeHeight,
-                videoId: 'xFa2_PVMeDQ'
+//                width: iframeWidth,
+//                height: iframeHeight,
+                videoId: 'V4pKVOqUlnY'
             });
         }
         

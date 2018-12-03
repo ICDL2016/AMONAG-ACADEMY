@@ -104,13 +104,14 @@ body {
 
 .restaurant__content {
     background: #fff;
-    padding: 10px;
+    padding: 10px 0 5px;
 }
 
 .restaurant__content h2 {
     margin: 0;
     color: #ec220a;
-    line-height: 1.2;
+    line-height: 1em;
+    font-size: 2.2em;
 }
 
 .content .languages-string-div {
@@ -122,9 +123,8 @@ body {
 
 .languages-string-div li {
     display: inline-block;
-    margin-right: 5px;
-    color: #777;
-    font-weight: bold;    
+    margin-right: 1px;
+    color: #777;    
 }
 
 .languages-string-div li:last-child {
@@ -138,10 +138,10 @@ body {
 }
 
 .video-bg {
-    width: 600px;
-    height: 450px;
+    width: 640px;
+    height: 360px;
     margin: auto;
-    background: #333;
+    background: #111;
     z-index: -10;
 }
 
@@ -150,14 +150,18 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 640px;
     height: 100%;
-    max-height: 450px;
+    max-height: 360px;
     position: absolute;
     top: 0;
-    left: calc(50% - 300px);
+    left: calc(50% - 320px);
     margin: auto;
     text-align: center;    
+}
+
+.play-div img {
+    width: 120px;
 }
 
 .play-div img:hover {
@@ -237,8 +241,11 @@ body {
 }
 
 @media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
     .logo-div {
-        width: 200px;        
+        width: 180px;        
     }
     .enter-div {
         margin: 0;    
@@ -246,11 +253,18 @@ body {
     .content {
         margin-top: 0px;        
     }
+    .restaurant__content h2 {
+        font-size: 1.4em;
+    }
     .languages-string-div {
+        font-size: 14px;
         padding: 0 10px;
     }
     .play-div {                
-        left: 0;        
+        left: 10px;        
+    }
+    .play-div img {
+        width: 80px;
     }
     .video-div {        
         margin: 20px 0 10px;        
