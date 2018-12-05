@@ -89,7 +89,7 @@
             </ul>
             <div class="video-div">
                 <div class="video-bg"></div>
-                <div id="youtube" class="hidden">
+                <div id="ytplayer" class="hidden">
                 </div>
                 <div class="play-div">
                     <img src="img/play.png" alt="">
@@ -145,39 +145,41 @@
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-	<script src="https://www.youtube.com/iframe_api"></script>
+<!--	<script src="https://www.youtube.com/iframe_api"></script>-->
     <script src="js/common.js"></script>
 	<script>
 		$('.fancybox').fancybox();
+
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         
         $('.play-div img').click(function(){
             $(this).parent().addClass('hidden');
             $(this).parent().siblings('.video-bg').addClass('hidden');
-            $(this).parent().siblings('#youtube').removeClass('hidden');
+            $(this).parent().siblings('#ytplayer').removeClass('hidden');
             player.playVideo();
         });
         
-        var iframeWidth = 640;
-        var iframeHeight = 360;        
+        var iframeWidth = 540;
+        var iframeHeight = 300;        
         
         function windowSize() {
             if ($(window).width() <= 767) {
                 iframeWidth = $(window).width() - 20;
                 iframeHeight = iframeWidth/2;
-                $('.video-bg').css('width', iframeWidth).css('height',iframeHeight);
-                $('.play-div').css('width', iframeWidth).css('height',iframeHeight);
-                $('.play-div img').css('width', iframeHeight/2).css('height',iframeHeight/2);
+                $('.video-div').css('width', iframeWidth).css('height',iframeHeight);
             } else {
-                iframeWidth = 640;
-                iframeHeight = 360;
-                $('.video-bg').css('width', iframeWidth).css('height',iframeHeight);
-                $('.play-div').css('width', iframeWidth).css('height',iframeHeight);
-                $('.play-div img').css('width', '120px').css('height','120px');
+                iframeWidth = 540;
+                iframeHeight = 300;
+                $('.video-div').css('width', iframeWidth).css('height',iframeHeight);
             }
         };
         
         function onYouTubeIframeAPIReady(iframeWidth, iframeHeight) {
-            player = new YT.Player('youtube', {
+            player = new YT.Player('ytplayer', {
 //                width: iframeWidth,
 //                height: iframeHeight,
                 videoId: 'V4pKVOqUlnY'
