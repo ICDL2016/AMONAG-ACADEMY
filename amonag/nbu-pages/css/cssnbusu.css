@@ -1,0 +1,39 @@
+/*Для всех сайтов*/
+
+.title {
+    display:block;
+}
+.item-pictures_w300 a img{
+    width: 300px;
+}
+.item-pictures_w150 a img{
+    width: 150px;
+}
+.item-pictures_w210 a img{
+    width: 210px;
+}
+.icons {
+    list-style:none;
+    padding:0;
+}
+.icons li{
+    display: inline-block;
+}
+.video-block {
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.form-checkbox.error + label:before {
+    border: 1px solid red;
+}
+
+
+/*UB1*/
+.programms-block__descr{
+    width:100%;
+}
+/*IAB*/
+.programs-wrap{
+    left: 0;
+    right: 0;
+}
