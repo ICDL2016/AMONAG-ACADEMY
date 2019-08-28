@@ -2899,6 +2899,12 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .btn__try {
 	width: 180px;
 	font-size: 16px;
+	transition: all .3s;
+}
+
+.btn__try:hover {
+	color: #fff!important;
+	background: #1a4a9a!important;
 }
 
 .container-menu {
