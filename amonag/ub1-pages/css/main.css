@@ -189,6 +189,7 @@ img {
 	width: 100%;
 	top: 0;
 	z-index: 999;
+	border-bottom: 2px solid #808080;
 }
 .header .logo__block img {
 	width: 20px;
