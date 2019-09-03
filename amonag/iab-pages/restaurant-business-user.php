@@ -117,4 +117,4 @@
 		<div class="loader_inner"></div>
 	</div>
 
-<?php require_once '_footer.php';
+<?php require_once '_scripts.php';

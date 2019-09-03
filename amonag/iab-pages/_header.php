@@ -12,9 +12,17 @@
     <meta name="description" content="">
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/f5757.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/f6060.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/f7272.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/f7676.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/f114114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/f120120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/f144144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/f152152.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/f3232.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/f9696.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/f1616.png">
     <link rel="manifest" href="img/favicons/manifest.json">
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#800000">
@@ -27,7 +35,8 @@
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/cssnbusu.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=2">
+
     <link rel="stylesheet" href="css/media.css">
 
     <script src="libs/modernizr/modernizr.js"></script>
@@ -35,7 +44,7 @@
 
 </head>
 
-<body class="bg__white">
+<body <?= strpos($_SERVER['REQUEST_URI'], 'user') != -1 ? '' : 'class="bg__white"'?>>
 <header class="header">
     <div class="inner__content">
         <div class="logo__block jQtooltip" title="Главная страница">
@@ -55,7 +64,7 @@
             <!--<li><a href="#">PT</a></li>-->
             <!--</ul>-->
             <!--</li>-->
-            <li class="jQtooltip" title="Вход">
+            <li class="jQtooltip" title="Личный кабинет">
                 <a class="icon__enter" href="#"><i class="fa fa-graduation-cap"></i></a>
             </li>
             <li>
