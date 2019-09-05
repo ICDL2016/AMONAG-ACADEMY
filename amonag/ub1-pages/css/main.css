@@ -2473,9 +2473,15 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
-	background: #e64e25;
+	background: #215fc6;
 	padding: 5px 10px;
+	transition: all .3s;
 }
+
+.set__tab_content a:hover {
+	background: #1a4a9a;
+}
+
 .inside__tab {
 	padding: 10px;
 	margin-bottom: -20px;
