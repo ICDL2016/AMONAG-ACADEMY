@@ -46,7 +46,7 @@
 
 </head>
 
-<body <?= strpos($_SERVER['REQUEST_URI'], 'user') != -1 ? '' : 'class="bg__white"'?>>
+<body <?= strpos($_SERVER['REQUEST_URI'], 'user') ? '' : 'class="bg__white"'?>>
 <header class="header">
     <div class="inner__content">
         <div class="logo__block jQtooltip" title="Главная страница">
