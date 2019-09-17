@@ -421,6 +421,7 @@ img {
 	display: inline-block;
 	float: right;
 	list-style: none;
+	opacity: .9;
 }
 .sidebar__nav a {
 	text-align: left;
@@ -2621,7 +2622,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	width: 100px;
 	margin: 10px 0 0 20px;
 	font-size: 18px;
-	background: #e34c21;
+	background: #800000;
 	text-align: center;
 	text-decoration: none;
 	padding: 5px 0;
