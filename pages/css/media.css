@@ -12,7 +12,11 @@
 	}
 }
 
-
+@media only screen and (max-height : 400px) {
+	.audio__playback_inside {
+		overflow: scroll;
+	}
+}
 
 
 /* Small Devices, Tablets */
